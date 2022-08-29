@@ -1,39 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 
+/**Jose-profile web - version 1 - Footer 
+ * Component - Features:
+ * 
+ *      --> Building the 'Footer' Component
+ *          
+ * 
+ * Notes: This Component is part of the
+ * HomePage Component.
+*/
+
 const Footer = () => {
 
     return(
-        <Wrapper>
-        <h5>&copy; { new Date().getFullYear()}</h5>
-        <span> JP  |  Data Analyst Cognizant  </span>
-        <h5>  All Rights reserved</h5>
+    <Wrapper>
+        <div>
+            <h5>&copy; { new Date().getFullYear()}</h5>
+            <span> JP  |  Data Analyst Cognizant  </span>
+            <h5>  All Rights reserved</h5>
+        </div>
     </Wrapper>
     )
 }
 
 const Wrapper = styled.footer`
-  height: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--clr-primary-15);
-  text-align: center;
-  span {
-    color: var(--clr-white);
-  }
-  h5 {
-    color: var(--clr-white);
-    margin: 0.5rem;
-
-    font-weight: 400;
-    text-transform: none;
-    line-height: 1.25;
-  }
-  @media (min-width: 776px) {
-    flex-direction: row;
-  }
+    background-color: var(--clr-primary-15);
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var( --clr-white);
+        padding: 1rem;
+        margin: 0 auto;
+    }
 `
 
 export default Footer;
