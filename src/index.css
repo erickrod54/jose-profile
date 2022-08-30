@@ -1,3 +1,13 @@
+/**Jose-profile web - version 1 - index js - Features:
+ * 
+ *      --> Setting up new stylesheet.
+ * 
+ * Notes: For now all routes are targetting to
+ * home, but eventually in next version i'll
+ * fix it routing to each route matching the
+ * right Component-Page
+*/
+
 /*
 =============== 
 Variables
@@ -6,18 +16,18 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(22, 28%, 21%);
-  --clr-primary-2: hsl(22, 28%, 29%);
-  --clr-primary-3: hsl(22, 28%, 37%);
-  --clr-primary-4: hsl(22, 28%, 45%);
+  --clr-primary-1: #282466;
+  --clr-primary-2: #36328c;
+  --clr-primary-3: #4540b3;
+  --clr-primary-4: #544dd9;
   /* primary/main color */
-  --clr-primary-5: hsl(22, 31%, 52%);
+  --clr-primary-5: hsl(243, 100%, 68%);
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(22, 31%, 60%);
-  --clr-primary-7: hsl(22, 31%, 67%);
-  --clr-primary-8: hsl(20, 31%, 74%);
-  --clr-primary-9: hsl(22, 31%, 81%);
-  --clr-primary-10: hsl(22, 31%, 88%);
+  --clr-primary-6: hsl(243, 100%, 73%);
+  --clr-primary-7: hsl(243, 100%, 77%);
+  --clr-primary-8: hsl(243, 100%, 82%);
+  --clr-primary-9: hsl(244, 100%, 87%);
+  --clr-primary-10: hsl(243, 100%, 92%);
   /* profile colors - orange-shades**/
   --clr-primary-11:hsla(22, 98%, 45%, 1);
   --clr-primary-12:hsla(22, 98%, 50%, 1);
@@ -70,8 +80,8 @@ Global Styles
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-white);
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Qwitcher Grypen', cursive, 'Bree Serif', serif;
+  background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -158,60 +168,96 @@ p {
     width: 95vw;
   }
 }
-.text-center {
+
+/*
+=============== 
+Products
+===============
+*/
+
+.title {
   text-align: center;
+  font-family: 'Qwitcher Grypen', cursive;
+  
 }
-@keyframes spinner {
-  to {
-    transform: rotate(360deg);
+.title-underline {
+  height: 0.25rem;
+  width: 6rem;
+  background: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.text{
+  font-family: 'Bree Serif', serif;
+}
+
+.products {
+  padding: 3rem 0;
+}
+
+.product {
+  display: block;
+  margin-bottom: 2rem;
+  color: var(--clr-grey-1);
+}
+.product img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.info {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  color: var(--clr-primary-5);
+}
+@media screen and (min-width: 776px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .product img {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.loading {
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto;
-  margin-top: 10rem;
-  border-radius: 50%;
-  border: 4px solid #ccc;
-  border-top-color: var(--clr-primary-5);
-  animation: spinner 0.6s linear infinite;
+/*
+=============== 
+Single Product
+===============
+*/
+.link {
+  color: var(--clr-primary-5);
+}
+.single-product {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+.single-product-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.single-product-price {
+  color: var(--clr-primary-5);
 }
 
-.btn {
-  text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-10);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  font-weight: 400;
-  transition: var(--transition);
-  font-size: 0.875rem;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-  border-color: transparent;
-}
-.btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-7);
-}
-.title {
-  text-align: center;
-}
-.title .underline {
-  width: 6rem;
-  height: 0.25rem;
-  background: #49a6e9;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
-}
-.page-100 {
-  min-height: calc(100vh - 10rem);
-  padding: 5rem 0;
-}
-.page {
-  min-height: calc(100vh - (20vh + 10rem));
+@media screen and (min-width: 992px) {
+  .single-product {
+    grid-template-columns: 1fr 1fr;
+  }
 }
