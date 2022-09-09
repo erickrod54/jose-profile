@@ -3,11 +3,10 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { useAppContext } from "../context";
 
-/**jose-profile page - version 1 - navbar.component.jsx - 
+/**jose-profile page - version 2 - navbar.component.jsx - 
  * Features: 
  * 
- *      --> Adding a 'text-shadow' prop to the 'name'
- *          and the class style '.title'
+ *      --> Re-styling 'NavWrapper' 
  * 
  * Notes: By this version i'll work on styling the app 
  * and add essential components
@@ -38,7 +37,13 @@ const NavBar = () => {
 }
 
 const NavWrapper = styled.nav`
-  background-color: var(--clr-primary-15);  
+  background-color: var(--clr-primary-15); 
+  border-bottom: 2px solid var(--clr-primary-11);
+  
+  &:hover{
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+  }
   .title{
       color: var(--clr-white);
       text-shadow: -1px 0 black, 0 1px black
