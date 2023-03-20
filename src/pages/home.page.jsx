@@ -1,45 +1,41 @@
 import React from "react";
 import styled from "styled-components";
-
-import Sections from "../components/sections.component";
+//import Sections from "../components/sections.component";
 import Content from "../components/content.component";
 
-/**Jose-profile web - version 1 - HomePage - Features:
+import { Footer, NavBar, IntroComponent, WorkComponent, SkillsComponent, LanguagesComponent } from '../components/index.components';
+
+
+
+/**Jose-profile web - version 2.01 - HomePage - Features:
  * 
- *      --> Importing and Placing 'Sections' and 
- *         'Content'  components in order to
- *          display the data
+ *      --> Placing separate components to refactor home
  * 
- * Notes: For now all routes are targetting to
- * home, but eventually in next version i'll
- * fix it routing to each route matching the
- * right Component-Page
+ *      --> Changing versioning to two digits.
+ * 
+ * Notes: Every component will be uncommented as it is
+ * finish
 */
 
 const HomePage = () => {
 
     return(
-    <div>
-    <Wrapper>
-        <Sections className='sections'/>
-        <Content  className='content'/>
-    </Wrapper>
-    </div> 
+        <div className="container">
+            <NavBar />
+                <Content />
+                {/**
+                <IntroComponent />
+                <WorkComponent />
+                <SkillsComponent />
+                <LanguagesComponent /> 
+                */}
+            <Footer/>
+        </div>
     )
 }
 
 const Wrapper = styled.section`
-  display: flex;
-  flex-direction: row;
-
-  .sections{
-    margin: 0 auto;
-    border-radius: 2px solid black;
-  }
-
-  .content{
-    margin: 0 auto;
-  }
+  
 `
 
 export default HomePage;
