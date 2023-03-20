@@ -4,29 +4,23 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 /**Components and pages */
-import NavBar from "./components/navbar.component";
 import HomePage from "./pages/home.page";
 import ErrorPage from "./pages/error.page";
-import Footer from "./components/footer.component";
 
-/**Jose-profile web - version 1 - App js - Features:
+/**Jose-profile web - version 2.01 - App js - Features:
  * 
- *      --> Setting up 'react-router' version 6
+ *      --> Migrating 'NavBar' and 'Footer' Component.
  * 
- *      --> Importing and Placing pages and 
- *          Components.
+ *      --> Changing versioning to two digits.
  * 
- * Notes: For now all routes are targetting to
- * home, but eventually in next version i'll
- * fix it routing to each route matching the
- * right Component-Page
+ * Notes: This Component can have later changes respecting
+ * to a Shared Layout
 */
 
 
 function App() {
   return (
     <Router>
-      <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />}/>
           <Route path="/intro" element={<HomePage />}/>
@@ -35,7 +29,6 @@ function App() {
           <Route path="/languages" element={<HomePage />}/>
           <Route path="*" element={<ErrorPage />}/>
         </Routes>
-      <Footer />
     </Router>
   );
 }
