@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { ErickQR } from '../assets/index'
+import { ErickQR as QR } from '../assets/index.assets';
 
-/**jose-profile page - version 2 - QRDev Component- 
- * Features: 
+/**Jose-profile web - version 2.02 - QRComponent - Features:
  * 
- *      --> Importing, placing and styling 
- *          'ErickQR'. 
+ *      --> Clearing code.
  * 
- * Notes: By this version i'll work on styling the app 
- * and add essential components
- * */
+ *      --> Refactoring the app.
+ * 
+ * Notes: All these are clean files in data, directory and 
+ * files
+*/
 
-const QRDev = () => {
+const QRComponent = () => {
 
     return(
         <QRWrapper>
-            <img src={ErickQR} alt='jose-qr-card' name='jose-qr-card'/>
+            <img src={QR} alt='jose-qr-card' name='jose-qr-card'/>
         </QRWrapper>
     )
 }
@@ -30,4 +30,4 @@ const QRWrapper = styled.div`
     }
 `
 
-export default QRDev;
+export default QRComponent;
