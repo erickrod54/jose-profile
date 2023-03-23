@@ -1,20 +1,23 @@
+import HeaderComponent from "./header.component";
+import ResumeComponent from "./resume.component";
+import FooterComponent from "./footer.component";
+
+/**Resume Components */
+
 import IntroComponent from "./intro.component";
-import NavBar from "./navbar.component";
-import Footer from "./footer.component";
 import WorkComponent from "./work.component";
 import SkillsComponent from "./skills.component";
 import LanguagesComponent from "./languages.component";
 
-/**Jose-profile web - version 2.01 - index components js - 
- * Features:
+/**Jose-profile web - version 2.02 - index.components - Features:
  * 
- *      --> Building the index and importing and 
- *          exporting all HomePage Components.
+ *      --> Importing Components to build the website.
  * 
- *      --> Changing versioning to two digits.
+ *      --> Dividing Resume components and Website Components.
  * 
- * Notes: Every component will be uncommented as it is
- * finish
+ * Notes: All these are clean files in data, directory and 
+ * files
 */
 
-export { NavBar, IntroComponent, Footer, WorkComponent, SkillsComponent, LanguagesComponent }
+
+export { HeaderComponent, ResumeComponent, FooterComponent, IntroComponent, WorkComponent, SkillsComponent, LanguagesComponent }
