@@ -1,41 +1,23 @@
 import React from "react";
-import styled from "styled-components";
-//import Sections from "../components/sections.component";
-import Content from "../components/content.component";
+import { HeaderComponent, ResumeComponent, FooterComponent } from '../components/index.components';
 
-import { Footer, NavBar, IntroComponent, WorkComponent, SkillsComponent, LanguagesComponent } from '../components/index.components';
-
-
-
-/**Jose-profile web - version 2.01 - HomePage - Features:
+/**Jose-profile web - version 2.02 - HomePage - Features:
  * 
- *      --> Placing separate components to refactor home
+ *      --> Defining main Components.
  * 
- *      --> Changing versioning to two digits.
- * 
- * Notes: Every component will be uncommented as it is
- * finish
+ * Notes: All these are clean files in data, directory and 
+ * files
 */
 
 const HomePage = () => {
 
     return(
         <div className="container">
-            <NavBar />
-                <Content />
-                {/**
-                <IntroComponent />
-                <WorkComponent />
-                <SkillsComponent />
-                <LanguagesComponent /> 
-                */}
-            <Footer/>
+            <HeaderComponent />
+            <ResumeComponent />
+            <FooterComponent />
         </div>
     )
 }
-
-const Wrapper = styled.section`
-  
-`
 
 export default HomePage;
