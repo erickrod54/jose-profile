@@ -1,11 +1,16 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 
-/**Jose-profile web - version 2.04 - ErrorPage Component - Features:
+/**Jose-profile web - version 2.05 - ErrorPage Component - Features:
  * 
- *      --> Placing button to 'navigate' back to 'HomePage'.
+ *      --> Implementing useNavigate to navigate to 'HomePage'.
  * 
- * Notes: Pending to set navigation and styles for 'ErrorPage'
+ *      --> Implementing style naming class.
+ * 
+ *      --> Editing error message.
+ * 
+ * Notes: Pending to set useLocation to get url params and 
+ * show the user the incorrect url.
 */
 
 const ErrorPage = () => {
@@ -18,9 +23,11 @@ const ErrorPage = () => {
     }
 
     return(
-    <div className="page-100">
-        <h2>Error Page</h2>
-        <button onClick={handleHome}> Go Back Home Page</button>
+    <div className="error-page">
+        <div className="error-page--message">
+            <h2>page does not exist</h2>
+            <button onClick={handleHome} className='button'> Go Back Home Page</button>
+        </div>
     </div>
     )
 }
