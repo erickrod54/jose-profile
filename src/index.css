@@ -1,6 +1,12 @@
-/**Jose-profile web - version 2.02 - index.css - Features:
+/**Jose-profile web - version 2.06 - index.css - Features:
  * 
- *      --> Recreating the whole stylesheet.
+ *      --> Writting styles for '.error-page'.
+ *
+ *      --> Writting styles for 'error-page--message'.
+ *
+ *      --> Writting styles for 'button' and 'button'
+ *          hover.
+ *
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -199,6 +205,43 @@ section#footer > div[class*=third-icons] img {
   width: 5rem;
   height: 5rem;
 }
+
+.button {
+  width: 10rem;
+  height: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: var(--clr-primary-11);
+  border: 1px solid var(--clr-primary-11);
+  background-color: var(--clr-grey-10);
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: var(--clr-primary-13);
+  color: white;
+  border-radius: 0.50rem;
+}
+
+.error-page{
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.error-page--message > h2{
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.error-page--message > button{
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
 
 
 @media screen and (max-width: 1144px){
