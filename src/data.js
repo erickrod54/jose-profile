@@ -2,9 +2,9 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-/**Jose-profile web - version 2.02 - data js - Features:
+/**Jose-profile web - version 2.07 - data js - Features:
  * 
- *      --> Clearing Data.
+ *      --> Editing 'text' from 'headerData'.
  * 
  * Notes: Still pending to clean more the data 
 */
@@ -15,7 +15,7 @@ export const headerData = [
     {
         id: 1,
         sectionname:'JP | Jose Antonio Velasco Pahmer Profile',
-        text: 'welcome to my website, checkout my experience',
+        text: 'welcome to my website, checkout my experience !!',
     }
 ]
 
