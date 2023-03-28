@@ -1,13 +1,9 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
 
-/**Jose-profile web - version 2.02 - HeaderComponent - Features:
+/**Jose-profile web - version 2.07 - HeaderComponent - Features:
  * 
- *      --> Clearing Code from old Markup.
- * 
- *      --> Applying style class naming.
- * 
- *      --> Refactoring the app.
+ *      --> Wrapping title and logo using 'header--container'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -24,8 +20,10 @@ const HeaderComponent = () => {
 
     return(
         <section id='header'>
-            <h2 className="header--title">{logo}</h2>
-            <p className="header--logo">{welcomemsg}</p>
+            <div className="header--container">
+                <h2 className="header--title">{logo}</h2>
+                <p className="header--logo">{welcomemsg}</p>
+            </div>
         </section>
     )
 }
