@@ -1,6 +1,6 @@
-/**Jose-profile web - version 2.08 - index.css - Features:
+/**Jose-profile web - version 2.09 - index.css - Features:
  * 
- *      --> Writting common styles for 'secondary titles'.
+ *      --> Work in progress styling 'paragraphs'.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -51,7 +51,7 @@
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --transition: all 0.3s linear;
-  --spacing: 0.1rem;
+  --spacing: 2rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -60,7 +60,8 @@
 
   /*font size title**/
   --font-size-title: calc( 0.75rem + 2vw);
-  --font-size-secondary-title: calc( 0.50rem + 1vw)
+  --font-size-secondary-title: calc( 0.50rem + 1vw);
+  --paragraph-font-size:calc(.7rem + 0.637vw);
 }
 
 *,
@@ -165,6 +166,24 @@ section#intro{
 .intro--para,
 .work-experience--para{
   line-height: 1.5rem;
+}
+
+.intro--para,
+.work-experience--para,
+.skills--list--item,
+.languages--list--item{
+  font-size: var(--paragraph-font-size);
+  line-height: var(--spacing);
+}
+
+.languages--list--item{
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+section#work-experience > article > section > div > p > span{
+  text-transform: capitalize;
+  font-weight: 700;  
 }
 
 .work-experience--para{
