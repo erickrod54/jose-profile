@@ -1,10 +1,6 @@
-/**Jose-profile web - version 2.07 - index.css - Features:
+/**Jose-profile web - version 2.08 - index.css - Features:
  * 
- *      --> Writting styles for 'header--container', 
- *          'header--title' and 'header--logo'.
- *
- *      --> Writting vars for '--font-size-title'
- *          and '--font-size-secondary-title'.
+ *      --> Writting common styles for 'secondary titles'.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -113,17 +109,29 @@ section#header{
   color: var(--clr-white);
   font-weight: 500;
   font-size: var(--font-size-title);
-  box-shadow: 0px 2px 0px var(--dark-shadow); /* add box shadow */
   width: fit-content;
-  text-decoration: underline; /* add underline */
-  text-underline-offset: 4px; /* adjust the distance of the underline from the text */
 }
 
+.intro--title,
+.work-experience--roltitle,
+.skills--title,
+.languages--title,
 .header--logo{
   color: var(--clr-primary-13);
   font-weight: 700;
   text-transform: capitalize;
   font-size: var(--font-size-secondary-title);
+  
+}
+
+.intro--title,
+.work-experience--roltitle,
+.skills--title,
+.languages--title,
+.header--title{
+  box-shadow: 0px 2px 0px var(--dark-shadow); /* add box shadow */
+  text-decoration: underline 4px solid var(--clr-black); /* add underline */
+  text-underline-offset: 4px; /* adjust the distance of the underline from the text */
 }
 
 section#resume{
