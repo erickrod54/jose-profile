@@ -1,6 +1,6 @@
-/**Jose-profile web - version 2.09 - index.css - Features:
+/**Jose-profile web - version 2.10 - index.css - Features:
  * 
- *      --> Work in progress styling 'paragraphs'.
+ *      --> Changing background color for the sections.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -147,11 +147,17 @@ section#intro{
   display: grid;
   width: 30rem;
   height: fit-content;
-  background-color: var(--clr-grey-5);
   grid-column: center-start / col-end 3;
   grid-template-rows: repeat(2);
 }
 
+section#intro,
+section#work-experience,
+section#skills,
+section#languages{
+  background-color: var(--clr-grey-10);
+
+}
 .intro--title,
 .intro--para,
 .work-experience--roltitle,
@@ -192,7 +198,6 @@ section#work-experience > article > section > div > p > span{
 
 section#work-experience{
   display: grid;
-  background-color: var(--clr-grey-5);
   grid-column: col-start 4 / col-end 6;
   grid-template-rows: repeat(2);
 }
@@ -200,7 +205,6 @@ section#work-experience{
 section#skills{
   display: grid;
   margin-top: 1rem;
-  background-color: var(--clr-grey-5);
   grid-column: col-start 4 / col-end 6;
 }
 
@@ -208,7 +212,6 @@ section#languages{
   display: grid;
   margin-top: 1rem;
   padding: 1rem;
-  background-color: var(--clr-grey-5);
   grid-column: col-start 4 / col-end 6;
 }
 
