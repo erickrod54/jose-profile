@@ -1,25 +1,24 @@
 import React from "react";
+import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
-/**Jose-profile web - version 2.02 - WorkComponent - Features:
+
+/**Jose-profile web - version 2.16 - WorkComponent - Features:
  * 
- *      --> Clearing Code from old Markup.
- * 
- *      --> Applying style class naming.
- * 
- *      --> Refactoring the app.
+ *      --> Wrapping 'WorkComponent' with style 
+ *         'WorkExperienceWrapper'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
-*/
+ */
 
 const WorkComponent = () => {
-
+    
     const { workExperience } = useJoseProfileContext();
     console.log('workExperience data ==>', workExperience);
 
     return(
-        <section id="work-experience">
+        <WorkExperienceWrapper id="work-experience">
             {workExperience.map((rol) => {
                 const { id, roltitle, company, experience1, experience2, experience3, year } = rol;
                 
@@ -42,8 +41,24 @@ const WorkComponent = () => {
                     </article>
                 )
             })}
-        </section>
+        </WorkExperienceWrapper>
     )
 }
+
+const WorkExperienceWrapper = styled.section`
+
+    section#work-experience > article > section > div > p > span{
+        text-transform: capitalize;
+        font-weight: 700;  
+    }
+
+    section#work-experience:hover{
+      margin-top: 6rem;
+    }
+
+    .work-experience--para{
+       margin: 1.7rem;
+    }
+`
 
 export default WorkComponent;
