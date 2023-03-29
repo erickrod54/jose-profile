@@ -1,6 +1,6 @@
-/**Jose-profile web - version 2.12 - index.css - Features:
+/**Jose-profile web - version 2.13 - index.css - Features:
  * 
- *      --> Writting styles to scale the sections.
+ *      --> Organizing Global Shared Styles.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -113,27 +113,6 @@ section#header{
   width: fit-content;
 }
 
-.intro--title,
-.work-experience--roltitle,
-.skills--title,
-.languages--title,
-.header--logo{
-  color: var(--clr-primary-13);
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: var(--font-size-secondary-title);
-  
-}
-
-.intro--title,
-.work-experience--roltitle,
-.skills--title,
-.languages--title,
-.header--title{
-  box-shadow: 0px 2px 0px var(--dark-shadow); /* add box shadow */
-  text-decoration: underline 4px solid var(--clr-black); /* add underline */
-  text-underline-offset: 4px; /* adjust the distance of the underline from the text */
-}
 
 section#resume{
   margin: 1rem;
@@ -151,36 +130,7 @@ section#intro{
   grid-template-rows: repeat(2);
 }
 
-section#intro,
-section#work-experience,
-section#skills,
-section#languages{
-  background-color: var(--clr-grey-10);
 
-}
-.intro--title,
-.intro--para,
-.work-experience--roltitle,
-.skills--title,
-.skills--list,
-.languages--list--item,
-.languages--title{
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.intro--para,
-.work-experience--para{
-  line-height: 1.5rem;
-}
-
-.intro--para,
-.work-experience--para,
-.skills--list--item,
-.languages--list--item{
-  font-size: var(--paragraph-font-size);
-  line-height: var(--spacing);
-}
 
 .languages--list--item{
   text-transform: capitalize;
@@ -221,22 +171,7 @@ section#languages{
   grid-template-rows: 1fr;
 }
 
-section#work-experience,
-section#skills,
-section#languages{
-  width: 40rem;
-}
 
-section#work-experience:hover,
-section#skills:hover,
-section#languages:hover,
-section#intro:hover{
-  transform: scale(1.1);
-  border-radius: 1.5rem;
-  transition-duration: 0.4s;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
 
 section#work-experience:hover{
   margin-top: 6rem;
@@ -246,12 +181,12 @@ section#work-experience:hover{
 section#footer{
   display: grid;
   grid-template-columns: repeat(8,1fr);
-
+  
   background: linear-gradient(var(--clr-primary-17), var(--clr-primary-15));
   border-top: 3px solid var(--clr-primary-11);
   background-color: var(--clr-primary-15);
   grid-column: container-start / container-end;
-
+  
   bottom: 0;
 }
 
@@ -269,11 +204,6 @@ section#footer div:nth-child(3){
   grid-column: 7 / 9;
 }
 
-section#footer div:nth-child(1),
-section#footer div:nth-child(2),
-section#footer div:nth-child(3){
-  margin: 10px;
-}
 
 section#footer > div[class*=third-icons] img {
   width: 5rem;
@@ -326,7 +256,84 @@ svg:hover{
   transform: scale(1.1);
 }
 
+/*Global Shared styles **/
 
+.intro--title,
+.work-experience--roltitle,
+.skills--title,
+.languages--title,
+.header--logo{
+  color: var(--clr-primary-13);
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: var(--font-size-secondary-title);
+  
+}
+
+.intro--title,
+.work-experience--roltitle,
+.skills--title,
+.languages--title,
+.header--title{
+  box-shadow: 0px 2px 0px var(--dark-shadow); /* add box shadow */
+  text-decoration: underline 4px solid var(--clr-black); /* add underline */
+  text-underline-offset: 4px; /* adjust the distance of the underline from the text */
+}
+
+section#footer div:nth-child(1),
+section#footer div:nth-child(2),
+section#footer div:nth-child(3){
+  margin: 10px;
+}
+
+section#work-experience:hover,
+section#skills:hover,
+section#languages:hover,
+section#intro:hover{
+  transform: scale(1.1);
+  border-radius: 1.5rem;
+  transition-duration: 0.4s;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+section#work-experience,
+section#skills,
+section#languages{
+  width: 40rem;
+}
+
+.intro--title,
+.intro--para,
+.work-experience--roltitle,
+.skills--title,
+.skills--list,
+.languages--list--item,
+.languages--title{
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.intro--para,
+.work-experience--para,
+.skills--list--item,
+.languages--list--item{
+  font-size: var(--paragraph-font-size);
+  line-height: var(--spacing);
+}
+
+section#intro,
+section#work-experience,
+section#skills,
+section#languages{
+  background-color: var(--clr-grey-10);
+
+}
+
+.intro--para,
+.work-experience--para{
+  line-height: 1.5rem;
+}
 
 @media screen and (max-width: 1144px){
   section#intro{
@@ -340,19 +347,19 @@ svg:hover{
     padding: 1rem;
     grid-column: col-start 4 / col-end 6;
   }
-
+  
   section#work-experience{
     margin-bottom: 1rem;
     padding: 1rem;
   }
-
+  
   section#intro,
   section#work-experience,
   section#skills,
-section#languages{
+  section#languages{
     width: 20rem;
   }
-
+  
   section#resume{
     justify-content: center;
   }
