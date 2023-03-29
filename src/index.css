@@ -1,6 +1,6 @@
-/**Jose-profile web - version 2.10 - index.css - Features:
+/**Jose-profile web - version 2.11 - index.css - Features:
  * 
- *      --> Changing background color for the sections.
+ *      --> Writting styles for the github Icon.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -298,6 +298,16 @@ section#footer > div[class*=third-icons] img {
 .error-page--message > button{
   margin-top: 2rem;
   margin-left: 4rem;
+}
+
+svg:hover{
+  padding: 0;
+  margin: 0;
+  background-color: yellow;
+  transition-duration: var(--transition);
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 2rem 0.5rem var(--clr-primary-13), -0.5rem -0.5rem 2rem 0.5rem var(--clr-primary-11);
+  transform: scale(1.1);
 }
 
 
