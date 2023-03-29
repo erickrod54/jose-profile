@@ -1,8 +1,8 @@
-/**Jose-profile web - version 2.15 - index.css - Features:
+/**Jose-profile web - version 2.16 - index.css - Features:
  * 
- *      --> Migrating header styles to its own style component.
+ *      --> Migrating work-experience styles to its own style component.
  *
- *      --> Keeping header Global Styles.
+ *      --> Keeping work-experience Global Styles.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -137,19 +137,6 @@ section#work-experience{
   display: grid;
   grid-column: col-start 4 / col-end 6;
   grid-template-rows: repeat(2);
-}
-
-section#work-experience > article > section > div > p > span{
-  text-transform: capitalize;
-  font-weight: 700;  
-}
-
-section#work-experience:hover{
-  margin-top: 6rem;
-}
-
-.work-experience--para{
-  margin: 1.7rem;
 }
 
 /*work-experience styles - Global end**/
