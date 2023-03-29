@@ -1,8 +1,8 @@
-/**Jose-profile web - version 2.16 - index.css - Features:
+/**Jose-profile web - version 2.17 - index.css - Features:
  * 
- *      --> Migrating work-experience styles to its own style component.
+ *      --> Migrating languages styles to its own style component.
  *
- *      --> Keeping work-experience Global Styles.
+ *      --> Keeping languages Global Styles.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -156,17 +156,6 @@ section#languages{
   margin-top: 1rem;
   padding: 1rem;
   grid-column: col-start 4 / col-end 6;
-}
-
-.languages--list--item{
-  text-transform: capitalize;
-  font-weight: 600;
-}
-
-.languages--list--item {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
 }
 
 /*languages styles - Global end**/
