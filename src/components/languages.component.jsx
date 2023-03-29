@@ -1,13 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
-/**Jose-profile web - version 2.02 - App js - Features:
+/**Jose-profile web - version 2.17 - App js - Features:
  * 
- *      --> Clearing Code from old Markup.
- * 
- *      --> Applying style class naming.
- * 
- *      --> Refactoring the app.
+ *      --> Wrapping 'LanguagesComponent' with style 
+ *         'LanguagesWrapper'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -21,7 +19,7 @@ const LanguagesComponent = () => {
     const title = languages[0].languagestitle;
 
     return(
-        <section id="languages">
+        <LanguagesWrapper id="languages">
         <h2 className="languages--title">{title}</h2>
         <section className="languages--list--item">
         {languages.map((language) => {
@@ -34,8 +32,22 @@ const LanguagesComponent = () => {
                 )
             })}
         </section>
-    </section>
+    </LanguagesWrapper>
     )
 }
+
+const LanguagesWrapper = styled.section`
+
+    .languages--list--item{
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    .languages--list--item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+`
 
 export default LanguagesComponent;
