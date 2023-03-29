@@ -1,6 +1,6 @@
-/**Jose-profile web - version 2.11 - index.css - Features:
+/**Jose-profile web - version 2.12 - index.css - Features:
  * 
- *      --> Writting styles for the github Icon.
+ *      --> Writting styles to scale the sections.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -226,6 +226,22 @@ section#skills,
 section#languages{
   width: 40rem;
 }
+
+section#work-experience:hover,
+section#skills:hover,
+section#languages:hover,
+section#intro:hover{
+  transform: scale(1.1);
+  border-radius: 1.5rem;
+  transition-duration: 0.4s;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+section#work-experience:hover{
+  margin-top: 6rem;
+}
+
 
 section#footer{
   display: grid;
