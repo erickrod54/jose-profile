@@ -1,6 +1,6 @@
-/**Jose-profile web - version 2.13 - index.css - Features:
+/**Jose-profile web - version 2.14 - index.css - Features:
  * 
- *      --> Organizing Global Shared Styles.
+ *      --> Organizing Styles for sections.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -91,6 +91,8 @@ body {
   min-height: 100vh;
 }
 
+
+/*header styles - Global start**/
 section#header{
   
   background: linear-gradient(var(--clr-primary-15), var(--clr-primary-17));
@@ -113,14 +115,9 @@ section#header{
   width: fit-content;
 }
 
+/*header styles - Global end**/
 
-section#resume{
-  margin: 1rem;
-  padding: 1rem;
-  display: grid;
-  grid-column: container-start / container-end;
-}
-
+/*intro styles - Global start**/
 
 section#intro{
   display: grid;
@@ -130,21 +127,22 @@ section#intro{
   grid-template-rows: repeat(2);
 }
 
+/*header styles - Global end**/
 
+/*resume styles - Global start**/
 
-.languages--list--item{
-  text-transform: capitalize;
-  font-weight: 600;
+/*This section contains the resume components
+* as intro, workexperience, skills, and languages**/
+section#resume{
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-column: container-start / container-end;
 }
 
-section#work-experience > article > section > div > p > span{
-  text-transform: capitalize;
-  font-weight: 700;  
-}
+/*header styles - Global end*/
 
-.work-experience--para{
-  margin: 1.7rem;
-}
+/*work-experience styles - Global start**/
 
 section#work-experience{
   display: grid;
@@ -152,17 +150,41 @@ section#work-experience{
   grid-template-rows: repeat(2);
 }
 
+section#work-experience > article > section > div > p > span{
+  text-transform: capitalize;
+  font-weight: 700;  
+}
+
+section#work-experience:hover{
+  margin-top: 6rem;
+}
+
+.work-experience--para{
+  margin: 1.7rem;
+}
+
+/*work-experience styles - Global end**/
+
+/*skills styles - Global start**/
 section#skills{
   display: grid;
   margin-top: 1rem;
   grid-column: col-start 4 / col-end 6;
 }
 
+/*skills styles - Global end**/
+
+/*languages styles - Global start**/
 section#languages{
   display: grid;
   margin-top: 1rem;
   padding: 1rem;
   grid-column: col-start 4 / col-end 6;
+}
+
+.languages--list--item{
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .languages--list--item {
@@ -171,13 +193,9 @@ section#languages{
   grid-template-rows: 1fr;
 }
 
+/*languages styles - Global end**/
 
-
-section#work-experience:hover{
-  margin-top: 6rem;
-}
-
-
+/*footer styles - Global start**/
 section#footer{
   display: grid;
   grid-template-columns: repeat(8,1fr);
@@ -210,6 +228,8 @@ section#footer > div[class*=third-icons] img {
   height: 5rem;
 }
 
+/*footer styles - Global end**/
+
 .button {
   width: 10rem;
   height: 3rem;
@@ -227,6 +247,8 @@ section#footer > div[class*=third-icons] img {
   color: white;
   border-radius: 0.50rem;
 }
+
+/*error-page styles - Global start**/
 
 .error-page{
   height: 100vh;
@@ -246,6 +268,11 @@ section#footer > div[class*=third-icons] img {
   margin-left: 4rem;
 }
 
+/*error styles - Global end**/
+
+
+/*github icon styles - Global start**/
+
 svg:hover{
   padding: 0;
   margin: 0;
@@ -255,6 +282,8 @@ svg:hover{
   box-shadow: 0.5rem 0.5rem 2rem 0.5rem var(--clr-primary-13), -0.5rem -0.5rem 2rem 0.5rem var(--clr-primary-11);
   transform: scale(1.1);
 }
+
+/*github icon styles - Global end**/
 
 /*Global Shared styles **/
 
