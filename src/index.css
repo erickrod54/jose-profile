@@ -1,6 +1,8 @@
-/**Jose-profile web - version 2.14 - index.css - Features:
+/**Jose-profile web - version 2.15 - index.css - Features:
  * 
- *      --> Organizing Styles for sections.
+ *      --> Migrating header styles to its own style component.
+ *
+ *      --> Keeping header Global Styles.
  *
  * 
  * Notes: All these are clean files in data, directory and 
@@ -100,19 +102,6 @@ section#header{
   background-color: var(--clr-primary-15);
   height: 30vh;  
   grid-column: container-start / container-end;
-}
-
-.header--container{
-  display: grid;
-  padding: 1.5rem;
-  margin-left: 1rem;
-}
-
-.header--title {
-  color: var(--clr-white);
-  font-weight: 500;
-  font-size: var(--font-size-title);
-  width: fit-content;
 }
 
 /*header styles - Global end**/
