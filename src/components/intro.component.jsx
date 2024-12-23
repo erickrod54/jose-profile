@@ -3,15 +3,21 @@ import { useJoseProfileContext } from "../context";
 import styled from "styled-components";
 import { IntroContainer } from "../style.components";
 
-/**Jose-profile web - version 2.19 - IntroComponent - Features:
+/**Jose-profile web - version 2.20 - IntroComponent - Features:
  * 
- *      --> Migrating 'IntroContainer' style component
+ *      --> writting 'IntroTitle' style component
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
 
+const IntroTitle = styled.h2`
+   color: var(--clr-primary-13);
+   font-weight: 700;
+   text-transform: capitalize;
+   font-size: var(--font-size-secondary-title);
+`
 
 const IntroComponent = () => {
 
@@ -23,7 +29,7 @@ const IntroComponent = () => {
 
     return(
         <IntroContainer>
-            <h2 className="intro--title">{introtitle}</h2>
+            <IntroTitle>{introtitle}</IntroTitle>
             <p className="intro--para">
                 {description}
             </p>
