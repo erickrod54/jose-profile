@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 2.19 - style.components - Features:
+/**Jose-profile web - version 3.00 - style.components - Features:
  * 
- *      --> writting 'IntroContainer' styles
+ *      --> writting 'IntroTitle' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const IntroTitle = styled.h2`
+   color: var(--clr-primary-13);
+   font-weight: 700;
+   text-transform: capitalize;
+   font-size: var(--font-size-secondary-title);
+`
 
 export const IntroContainer = styled.section`
     display: grid;
