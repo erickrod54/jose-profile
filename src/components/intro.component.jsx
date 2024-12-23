@@ -1,23 +1,17 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
 import styled from "styled-components";
+import { IntroContainer } from "../style.components";
 
-/**Jose-profile web - version 2.18 - IntroComponent - Features:
+/**Jose-profile web - version 2.19 - IntroComponent - Features:
  * 
- *      --> Wrrritng 'IntroContainer' style component
+ *      --> Migrating 'IntroContainer' style component
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-const IntroContainer = styled.section`
-    display: grid;
-    width: 30rem;
-    height: fit-content;
-    grid-column: center-start / col-end 3;
-    grid-template-rows: repeat(2);
-    background: white;
-`
+
 
 const IntroComponent = () => {
 
