@@ -1,23 +1,16 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
 import styled from "styled-components";
-import { IntroContainer } from "../style.components";
+import { IntroContainer, IntroTitle } from "../style.components";
 
-/**Jose-profile web - version 2.20 - IntroComponent - Features:
+/**Jose-profile web - version 3.00 - IntroComponent - Features:
  * 
- *      --> writting 'IntroTitle' style component
+ *      --> Migrating 'IntroTitle' style component
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-
-const IntroTitle = styled.h2`
-   color: var(--clr-primary-13);
-   font-weight: 700;
-   text-transform: capitalize;
-   font-size: var(--font-size-secondary-title);
-`
 
 const IntroComponent = () => {
 
