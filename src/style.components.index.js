@@ -1,12 +1,12 @@
-import { IntroContainer } from "./style.components";
+import { IntroContainer, IntroTitle } from "./style.components";
 
-/**Jose-profile web - version 2.19 - style components > index - 
+/**Jose-profile web - version 3.00 - style components > index - 
  * Features:
  * 
- *      --> Importing ajnd exporting 'IntroContainer'.
+ *      --> Importing ajnd exporting 'IntroTitle'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
 
-export { IntroContainer }
+export { IntroContainer, IntroTitle }
