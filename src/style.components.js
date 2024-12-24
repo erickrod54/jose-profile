@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.00 - style.components - Features:
+/**Jose-profile web - version 3.02 - style.components - Features:
  * 
- *      --> writting 'IntroTitle' styles
+ *      --> writting 'DescriptionWrapper' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const DescriptionWrapper = styled.p`
+    line-height: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: calc(.7rem + 0.637vw);
+`
 
 export const IntroTitle = styled.h2`
    color: var(--clr-primary-13);
