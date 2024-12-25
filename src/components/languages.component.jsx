@@ -2,9 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
-/**Jose-profile web - version 3.05 - LanguagesComponent - Features:
+/**Jose-profile web - version 3.06 - LanguagesComponent - Features:
  * 
- *      --> writting 'LanguageListItem' styles
+ *      -->  renaming 'LanguageListItem' to 'LanguageList' styles
+ * 
+ *       -->  writtting 'LanguageListItem'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -19,11 +21,19 @@ const LanguagesWrapper = styled.section`
      width: 40rem;
 `
 
-const LanguageListItem = styled.section`
+const LanguageList = styled.section`
     margin: 1rem;
     padding: 1rem;
     font-size:calc(.7rem + 0.637vw);
     line-height:2rem;
+`
+
+const LanguageListItem = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-transform: capitalize;
+    font-weight: 600;
 `
 
 
@@ -37,17 +47,17 @@ const LanguagesComponent = () => {
     return(
         <LanguagesWrapper>
         <h2 className="">{title}</h2>
-        <LanguageListItem>
+        <LanguageList>
         {languages.map((language) => {
                 const { id, languagename, icon } = language;
 
                 return(
-                    <ul key={id}>
+                    <LanguageListItem key={id}>
                         <li><span className="languages--name">{languagename}</span> - <span>{icon}</span></li>
-                    </ul>
+                    </LanguageListItem>
                 )
             })}
-        </LanguageListItem>
+        </LanguageList>
     </LanguagesWrapper>
     )
 }
