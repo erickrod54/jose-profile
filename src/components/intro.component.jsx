@@ -1,11 +1,10 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
-import styled from "styled-components";
 import { DescriptionWrapper, IntroContainer, IntroTitle } from "../style.components";
 
-/**Jose-profile web - version 3.02 - IntroComponent - Features:
+/**Jose-profile web - version 3.03 - IntroComponent - Features:
  * 
- *      --> Migrating 'DescriptionWrapper' style component
+ *      --> Clearing unsed imports
  * 
  * Notes: All these are clean files in data, directory and 
  * files
