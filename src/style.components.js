@@ -1,12 +1,21 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.02 - style.components - Features:
+/**Jose-profile web - version 3.07 - style.components - Features:
  * 
- *      --> writting 'DescriptionWrapper' styles
+ *      --> writting 'LanguagesWrapper' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const LanguagesWrapper = styled.section`
+    display: grid;
+    margin-top: 1rem;
+    padding: 1rem;
+    grid-column: col-start 4 / col-end 6;
+    background: white;
+    width: 40rem;
+`
 
 export const DescriptionWrapper = styled.p`
     line-height: 1.5rem;
