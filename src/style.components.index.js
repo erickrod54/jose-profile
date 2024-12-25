@@ -1,12 +1,12 @@
-import { DescriptionWrapper, IntroContainer, IntroTitle } from "./style.components";
+import { DescriptionWrapper, IntroContainer, IntroTitle, LanguagesWrapper } from "./style.components";
 
-/**Jose-profile web - version 3.02 - style components > index - 
+/**Jose-profile web - version 3.07 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'DescriptionWrapper'.
+ *      --> Importing and exporting 'LanguagesWrapper'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
 
-export { IntroContainer, IntroTitle, DescriptionWrapper }
+export { IntroContainer, IntroTitle, LanguagesWrapper,  DescriptionWrapper }
