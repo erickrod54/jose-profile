@@ -1,25 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
+import { LanguagesWrapper } from "../style.components";
 
-/**Jose-profile web - version 3.06 - LanguagesComponent - Features:
+/**Jose-profile web - version 3.07 - LanguagesComponent - Features:
  * 
- *      -->  renaming 'LanguageListItem' to 'LanguageList' styles
- * 
- *       -->  writtting 'LanguageListItem'
+ *      -->  Migrating 'LanguagesWrapper' to 'LanguageList' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-const LanguagesWrapper = styled.section`
-     display: grid;
-     margin-top: 1rem;
-     padding: 1rem;
-     grid-column: col-start 4 / col-end 6;
-     background: white;
-     width: 40rem;
-`
 
 const LanguageList = styled.section`
     margin: 1rem;
