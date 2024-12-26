@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.07 - style.components - Features:
+/**Jose-profile web - version 3.08 - style.components - Features:
  * 
- *      --> writting 'LanguagesWrapper' styles
+ *      --> writting 'LanguageList' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const LanguageList = styled.section`
+    margin: 1rem;
+    padding: 1rem;
+    font-size:calc(.7rem + 0.637vw);
+    line-height:2rem;
+`
 
 export const LanguagesWrapper = styled.section`
     display: grid;
