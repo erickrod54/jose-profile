@@ -1,12 +1,20 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.08 - style.components - Features:
+/**Jose-profile web - version 3.09 - style.components - Features:
  * 
- *      --> writting 'LanguageList' styles
+ *      --> writting 'LanguageListItem' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const LanguageListItem = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-transform: capitalize;
+    font-weight: 600;
+`
 
 export const LanguageList = styled.section`
     margin: 1rem;
