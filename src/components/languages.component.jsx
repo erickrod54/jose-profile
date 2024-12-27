@@ -3,13 +3,17 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 import { LanguageList, LanguageListItem, LanguagesWrapper, ListItem } from "../style.components";
 
-/**Jose-profile web - version 3.11 - LanguagesComponent - Features:
+/**Jose-profile web - version 3.12 - LanguagesComponent - Features:
  * 
- *      -->  Migrating 'ListItem' styles more
+ *      -->  write 'LanguagesSpan' styles 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
+
+const LanguagesSpan = styled.span`
+
+`
 
 const LanguagesComponent = () => {
 
@@ -27,7 +31,9 @@ const LanguagesComponent = () => {
 
                 return(
                     <LanguageListItem key={id}>
-                        <ListItem><span className="languages--name">{languagename}</span> - <span>{icon}</span></ListItem>
+                        <ListItem>
+                            <LanguagesSpan className="languages--name">{languagename}</LanguagesSpan> - <span>{icon}</span>
+                        </ListItem>
                     </LanguageListItem>
                 )
             })}
