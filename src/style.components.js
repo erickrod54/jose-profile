@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.09 - style.components - Features:
+/**Jose-profile web - version 3.11 - style.components - Features:
  * 
- *      --> writting 'LanguageListItem' styles
+ *      --> writting 'ListItem' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const ListItem = styled.li`
+
+`
 
 export const LanguageListItem = styled.ul`
     display: grid;
