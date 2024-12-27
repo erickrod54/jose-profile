@@ -1,24 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { LanguageList, LanguagesWrapper } from "../style.components";
+import { LanguageList, LanguageListItem, LanguagesWrapper } from "../style.components";
 
-/**Jose-profile web - version 3.08 - LanguagesComponent - Features:
+/**Jose-profile web - version 3.09 - LanguagesComponent - Features:
  * 
- *      -->  Migrating 'LanguageList' styles
+ *      -->  Migrating 'LanguageListItem' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-
-const LanguageListItem = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    text-transform: capitalize;
-    font-weight: 600;
-`
 
 
 const LanguagesComponent = () => {
