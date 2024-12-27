@@ -1,19 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { LanguageList, LanguageListItem, LanguagesWrapper } from "../style.components";
+import { LanguageList, LanguageListItem, LanguagesWrapper, ListItem } from "../style.components";
 
-/**Jose-profile web - version 3.10 - LanguagesComponent - Features:
+/**Jose-profile web - version 3.11 - LanguagesComponent - Features:
  * 
- *      -->  Migrating 'ListItem' styles
+ *      -->  Migrating 'ListItem' styles more
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-const ListItem = styled.li`
-
-`
 
 const LanguagesComponent = () => {
 
