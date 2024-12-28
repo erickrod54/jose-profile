@@ -3,14 +3,17 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 import { LanguageList, LanguageListItem, LanguagesSpan, LanguagesWrapper, ListItem } from "../style.components";
 
-/**Jose-profile web - version 3.13 - LanguagesComponent - Features:
+/**Jose-profile web - version 3.14 - LanguagesComponent - Features:
  * 
- *      -->  Migrating 'LanguagesSpan' styles 
+ *      -->  writting 'LanguagesSpanIcon' styles 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
+const LanguagesSpanIcon = styled.span`
+
+`
 
 const LanguagesComponent = () => {
 
