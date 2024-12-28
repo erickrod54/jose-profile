@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.11 - style.components - Features:
+/**Jose-profile web - version 3.12 - style.components - Features:
  * 
- *      --> writting 'ListItem' styles
+ *      --> writting 'LanguagesSpan' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const LanguagesSpan = styled.span`
+
+`
 
 export const ListItem = styled.li`
 
