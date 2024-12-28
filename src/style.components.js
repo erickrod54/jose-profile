@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.12 - style.components - Features:
+/**Jose-profile web - version 3.15 - style.components - Features:
  * 
- *      --> writting 'LanguagesSpan' styles
+ *      --> writting 'LanguagesSpanIcon' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const LanguagesSpanIcon = styled.span`
+
+`
 
 export const LanguagesSpan = styled.span`
 
