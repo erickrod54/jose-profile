@@ -1,19 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { LanguageList, LanguageListItem, LanguagesWrapper, ListItem } from "../style.components";
+import { LanguageList, LanguageListItem, LanguagesSpan, LanguagesWrapper, ListItem } from "../style.components";
 
-/**Jose-profile web - version 3.12 - LanguagesComponent - Features:
+/**Jose-profile web - version 3.13 - LanguagesComponent - Features:
  * 
- *      -->  write 'LanguagesSpan' styles 
+ *      -->  Migrating 'LanguagesSpan' styles 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-const LanguagesSpan = styled.span`
-
-`
 
 const LanguagesComponent = () => {
 
@@ -32,7 +29,7 @@ const LanguagesComponent = () => {
                 return(
                     <LanguageListItem key={id}>
                         <ListItem>
-                            <LanguagesSpan className="languages--name">{languagename}</LanguagesSpan> - <span>{icon}</span>
+                            <LanguagesSpan>{languagename}</LanguagesSpan> - <span>{icon}</span>
                         </ListItem>
                     </LanguageListItem>
                 )
