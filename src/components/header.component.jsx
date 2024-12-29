@@ -3,14 +3,21 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
 
-/**Jose-profile web - version 2.15 - HeaderComponent - Features:
+/**Jose-profile web - version 3.16 - HeaderComponent - Features:
  * 
- *      --> Wrapping 'HeaderComponent' with style 
- *         'HeaderWrapper'.
+ *      --> writting 'HeaderWrapper' styles.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
- */
+*/
+
+const HeaderWrapper = styled.section`
+    background: linear-gradient(hsla(220, 98%, 45%, 1), hsla(220, 98%, 65%, 1));
+    border-bottom: 3px solid var(hsla(22, 98%, 60%, 1));
+    background-color: var(hsla(220, 98%, 45%, 1));
+    height: 30vh;  
+    grid-column: container-start / container-end;
+`
 
 const HeaderComponent = () => {
 
@@ -22,7 +29,7 @@ const HeaderComponent = () => {
     const welcomemsg = headerData[0].text;
 
     return(
-        <HeaderWrapper id='header'>
+        <HeaderWrapper>
             <div className="header--container">
                 <h2 className="header--title">{logo}</h2>
                 <p className="header--logo">{welcomemsg}</p>
@@ -31,20 +38,5 @@ const HeaderComponent = () => {
     )
 }
 
-const HeaderWrapper = styled.section`
-    
-    .header--container{
-        display: grid;
-        padding: 1.5rem;
-        margin-left: 1rem;
-    }
-
-    .header--title {
-        color: var(--clr-white);
-        font-weight: 500;
-        font-size: var(--font-size-title);
-        width: fit-content;
-    }
-`
 
 export default HeaderComponent;
