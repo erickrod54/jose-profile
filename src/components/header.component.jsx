@@ -1,23 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
+import { HeaderWrapper } from "../style.components";
 
-
-/**Jose-profile web - version 3.16 - HeaderComponent - Features:
+/**Jose-profile web - version 3.17 - HeaderComponent - Features:
  * 
- *      --> writting 'HeaderWrapper' styles.
+ *      --> Migrating 'HeaderWrapper' styles.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-const HeaderWrapper = styled.section`
-    background: linear-gradient(hsla(220, 98%, 45%, 1), hsla(220, 98%, 65%, 1));
-    border-bottom: 3px solid var(hsla(22, 98%, 60%, 1));
-    background-color: var(hsla(220, 98%, 45%, 1));
-    height: 30vh;  
-    grid-column: container-start / container-end;
-`
 
 const HeaderComponent = () => {
 
