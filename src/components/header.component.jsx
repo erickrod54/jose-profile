@@ -3,13 +3,19 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 import { HeaderWrapper } from "../style.components";
 
-/**Jose-profile web - version 3.17 - HeaderComponent - Features:
+/**Jose-profile web - version 3.18 - HeaderComponent - Features:
  * 
- *      --> Migrating 'HeaderWrapper' styles.
+ *      --> writting 'HeaderContainer' styles.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
+
+const HeaderContainer = styled.div`
+  display: grid;
+  padding: 1.5rem;
+  margin-left: 1rem;
+`
 
 const HeaderComponent = () => {
 
@@ -22,10 +28,10 @@ const HeaderComponent = () => {
 
     return(
         <HeaderWrapper>
-            <div className="header--container">
+            <HeaderContainer>
                 <h2 className="header--title">{logo}</h2>
                 <p className="header--logo">{welcomemsg}</p>
-            </div>
+            </HeaderContainer>
         </HeaderWrapper>
     )
 }
