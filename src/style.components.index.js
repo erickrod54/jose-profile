@@ -1,4 +1,5 @@
 import { DescriptionWrapper,
+         HeaderWrapper,
          IntroContainer,
          IntroTitle,
          LanguageList,
@@ -7,10 +8,10 @@ import { DescriptionWrapper,
          LanguagesSpanIcon,
          LanguagesWrapper, ListItem } from "./style.components";
 
-/**Jose-profile web - version 3.15 - style components > index - 
+/**Jose-profile web - version 3.17 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'LanguagesSpanIcon'.
+ *      --> Importing and exporting 'HeaderWrapper'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -22,4 +23,5 @@ export { IntroContainer,
          DescriptionWrapper, 
          LanguageList,
          LanguagesSpanIcon,
+         HeaderWrapper,
          LanguageListItem, ListItem, LanguagesSpan }
