@@ -1,12 +1,18 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.19 - style.components - Features:
+/**Jose-profile web - version 4.00 - style.components - Features:
  * 
- *      --> writting 'HeaderContainer' styles
+ *      --> writting 'HeaderTitle' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const HeaderTitle = styled.h2`
+    box-shadow: 0px 2px 0px var(--dark-shadow); /* add box shadow */
+    text-decoration: underline 4px solid var(--clr-black); /* add underline */
+    text-underline-offset: 4px; /* adjust the distance of the underline from the text */
+`
 
 export const HeaderContainer = styled.div`
     display: grid;
