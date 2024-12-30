@@ -1,21 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { HeaderWrapper } from "../style.components";
+import { HeaderContainer, HeaderWrapper } from "../style.components";
 
-/**Jose-profile web - version 3.18 - HeaderComponent - Features:
+/**Jose-profile web - version 3.19 - HeaderComponent - Features:
  * 
- *      --> writting 'HeaderContainer' styles.
+ *      --> Migrating 'HeaderContainer' styles.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-const HeaderContainer = styled.div`
-  display: grid;
-  padding: 1.5rem;
-  margin-left: 1rem;
-`
+
 
 const HeaderComponent = () => {
 
