@@ -1,12 +1,18 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 3.17 - style.components - Features:
+/**Jose-profile web - version 3.19 - style.components - Features:
  * 
- *      --> writting 'HeaderWrapper' styles
+ *      --> writting 'HeaderContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const HeaderContainer = styled.div`
+    display: grid;
+    padding: 1.5rem;
+    margin-left: 1rem;
+`
 
 export const HeaderWrapper = styled.section`
     background: linear-gradient(hsla(220, 98%, 45%, 1), hsla(220, 98%, 65%, 1));
