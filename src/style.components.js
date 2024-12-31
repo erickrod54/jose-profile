@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.00 - style.components - Features:
+/**Jose-profile web - version 4.01 - style.components - Features:
  * 
- *      --> writting 'HeaderTitle' styles
+ *      --> writting 'HeaderLogo' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const HeaderLogo = styled.p`
+    color: hsla(22, 98%, 60%, 1);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: calc( 0.50rem + 1vw);
+`
 
 export const HeaderTitle = styled.h2`
     box-shadow: 0px 2px 0px var(--dark-shadow); /* add box shadow */
