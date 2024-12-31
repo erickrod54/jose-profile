@@ -1,23 +1,54 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
 import QRDev from "./erick.vcard.component";
+import styled from "styled-components";
 
-/**Jose-profile web - version 2.02 - FooterComponent - Features:
+/**Jose-profile web - version 4.01 - FooterComponent - Features:
  * 
- *      --> Clearing code from old Markup.
- * 
- *      --> Refactoring the app.
+ *      --> writting 'FooterStyled'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
+
+const FooterStyled = styled.section`
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+    background: linear-gradient(var(--clr-primary-17), var(--clr-primary-15));
+    border-top: 3px solid var(--clr-primary-11);
+    background-color: var(--clr-primary-15);
+    grid-column: container-start / container-end;
+
+    bottom: 0;
+
+    div:nth-child(1){
+    grid-column: 1 / 2;
+    }
+
+    div:nth-child(2){
+        display: grid;
+        grid-column: 3 / 6;
+        place-content: center;
+    }
+
+    div:nth-child(3){
+      grid-column: 7 / 9;
+    }
+
+    div[class*=third-icons] img {
+       width: 5rem;
+       height: 5rem;
+    }
+    
+`
 
 const FooterComponent = () => {
 
     const { GitHubIcon } = useJoseProfileContext()
 
     return (
-        <section id='footer'>
+        <FooterStyled>
             <div>
                     <a href="https://github.com/erickrod54">
                       {React.cloneElement(GitHubIcon, {style: {height: '5rem', width: '5rem'}})}
@@ -34,7 +65,7 @@ const FooterComponent = () => {
                     <QRDev />
                 </div>
             </div>
-        </section>
+        </FooterStyled>
     )
 }
 
