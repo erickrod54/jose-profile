@@ -3,14 +3,20 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 import { HeaderContainer, HeaderTitle, HeaderWrapper } from "../style.components";
 
-/**Jose-profile web - version 4.00 - HeaderComponent - Features:
+/**Jose-profile web - version 4.01 - HeaderComponent - Features:
  * 
- *      --> Migrating 'HeaderTitle' styles.
+ *      --> writting 'HeaderLogo' styles.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
+const HeaderLogo = styled.p`
+    color: hsla(22, 98%, 60%, 1);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: calc( 0.50rem + 1vw);
+`
 const HeaderComponent = () => {
 
     const { headerData } = useJoseProfileContext();
@@ -24,7 +30,7 @@ const HeaderComponent = () => {
         <HeaderWrapper>
             <HeaderContainer>
                 <HeaderTitle>{logo}</HeaderTitle>
-                <p className="header--logo">{welcomemsg}</p>
+                <HeaderLogo>{welcomemsg}</HeaderLogo>
             </HeaderContainer>
         </HeaderWrapper>
     )
