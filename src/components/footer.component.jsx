@@ -3,9 +3,9 @@ import { useJoseProfileContext } from "../context";
 import QRDev from "./erick.vcard.component";
 import styled from "styled-components";
 
-/**Jose-profile web - version 4.03 - FooterComponent - Features:
+/**Jose-profile web - version 4.04 - FooterComponent - Features:
  * 
- *      --> writting 'FooterDescription'
+ *      --> writting 'ThirdIcons'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -21,22 +21,12 @@ const FooterStyled = styled.section`
     grid-column: container-start / container-end;
 
     bottom: 0;
-
-    div:nth-child(2){
-        display: grid;
-        grid-column: 3 / 6;
-        place-content: center;
-    }
-
-    div:nth-child(3){
-      grid-column: 7 / 9;
-    }
-
-    div[class*=third-icons] img {
-       width: 5rem;
-       height: 5rem;
-    }
     
+`
+
+const ThirdIcons = styled.div`
+    display: grid;
+    grid-column: 8 / 10;
 `
 
 const FooterDescription = styled.div`
@@ -65,12 +55,12 @@ const FooterComponent = () => {
                 <span> JP  |  Data Analyst Cognizant  </span>
                 <h5>  All Rights reserved</h5>
             </FooterDescription>
-            <div>
+            <ThirdIcons>
                 <span>Developed by  @erickrod54</span>
                 <div className="third-icons">
                     <QRDev />
                 </div>
-            </div>
+            </ThirdIcons>
         </FooterStyled>
     )
 }
