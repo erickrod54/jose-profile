@@ -2,27 +2,15 @@ import React from "react";
 import { useJoseProfileContext } from "../context";
 import QRDev from "./erick.vcard.component";
 import styled from "styled-components";
+import { FooterStyled } from "../style.components";
 
-/**Jose-profile web - version 4.04 - FooterComponent - Features:
+/**Jose-profile web - version 4.05 - FooterComponent - Features:
  * 
- *      --> writting 'ThirdIcons'
+ *      --> Migrating 'FooterStyled' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-const FooterStyled = styled.section`
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-
-    background: linear-gradient(var(--clr-primary-17), var(--clr-primary-15));
-    border-top: 3px solid var(--clr-primary-11);
-    background-color: var(--clr-primary-15);
-    grid-column: container-start / container-end;
-
-    bottom: 0;
-    
-`
 
 const ThirdIcons = styled.div`
     display: grid;
