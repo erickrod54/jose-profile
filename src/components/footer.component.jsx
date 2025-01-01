@@ -3,9 +3,9 @@ import { useJoseProfileContext } from "../context";
 import QRDev from "./erick.vcard.component";
 import styled from "styled-components";
 
-/**Jose-profile web - version 4.02 - FooterComponent - Features:
+/**Jose-profile web - version 4.03 - FooterComponent - Features:
  * 
- *      --> writting 'GitHubImage'
+ *      --> writting 'FooterDescription'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -21,10 +21,6 @@ const FooterStyled = styled.section`
     grid-column: container-start / container-end;
 
     bottom: 0;
-
-    div:nth-child(1){
-    grid-column: 1 / 2;
-    }
 
     div:nth-child(2){
         display: grid;
@@ -43,6 +39,12 @@ const FooterStyled = styled.section`
     
 `
 
+const FooterDescription = styled.div`
+    display: grid;
+    grid-column: 3 / 6;
+    place-content: center;
+`
+
 const GitHubImage = styled.div`
     grid-column: 1 / 2;
 `
@@ -58,11 +60,11 @@ const FooterComponent = () => {
                       {React.cloneElement(GitHubIcon, {style: {height: '5rem', width: '5rem'}})}
                     </a>
             </GitHubImage>
-            <div>
+            <FooterDescription>
                 <h5>&copy; { new Date().getFullYear()}</h5>
                 <span> JP  |  Data Analyst Cognizant  </span>
                 <h5>  All Rights reserved</h5>
-            </div>
+            </FooterDescription>
             <div>
                 <span>Developed by  @erickrod54</span>
                 <div className="third-icons">
