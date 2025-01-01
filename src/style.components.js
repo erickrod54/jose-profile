@@ -1,12 +1,25 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.01 - style.components - Features:
+/**Jose-profile web - version 4.05 - style.components - Features:
  * 
- *      --> writting 'HeaderLogo' styles
+ *      --> writting 'FooterStyled' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const FooterStyled = styled.section`
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+    background: linear-gradient(var(--clr-primary-17), var(--clr-primary-15));
+    border-top: 3px solid var(--clr-primary-11);
+    background-color: var(--clr-primary-15);
+    grid-column: container-start / container-end;
+
+    bottom: 0;
+    
+`
 
 export const HeaderLogo = styled.p`
     color: hsla(22, 98%, 60%, 1);
