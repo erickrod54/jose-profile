@@ -1,12 +1,17 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.05 - style.components - Features:
+/**Jose-profile web - version 4.06 - style.components - Features:
  * 
- *      --> writting 'FooterStyled' styles
+ *      --> writting 'ThirdIcons' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const ThirdIcons = styled.div`
+    display: grid;
+    grid-column: 8 / 10;
+`
 
 export const FooterStyled = styled.section`
     display: grid;
