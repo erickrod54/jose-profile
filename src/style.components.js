@@ -8,6 +8,12 @@ import styled from "styled-components"
  * files
  */
 
+export const FooterDescription = styled.div`
+    display: grid;
+    grid-column: 3 / 6;
+    place-content: center;
+`
+
 export const ThirdIcons = styled.div`
     display: grid;
     grid-column: 8 / 10;
