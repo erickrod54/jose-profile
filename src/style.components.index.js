@@ -10,12 +10,13 @@ import { DescriptionWrapper,
          LanguageListItem,
          LanguagesSpan,
          LanguagesSpanIcon,
-         LanguagesWrapper, ListItem } from "./style.components";
+         LanguagesWrapper, ListItem, 
+         ThirdIcons} from "./style.components";
 
-/**Jose-profile web - version 4.05 - style components > index - 
+/**Jose-profile web - version 4.06 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'FooterStyled'.
+ *      --> Importing and exporting 'ThirdIcons'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -32,4 +33,5 @@ export { IntroContainer,
          HeaderTitle,
          HeaderLogo,
          FooterStyled,
+         ThirdIcons,
          LanguageListItem, ListItem, LanguagesSpan }
