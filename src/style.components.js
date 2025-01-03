@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.08 - style.components - Features:
+/**Jose-profile web - version 4.11 - style.components - Features:
  * 
- *      --> writting 'GitHubImageGitHubImage' styles
+ *      --> writting 'ResumeContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const ResumeContainer = styled.section`
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-column: container-start / container-end;
+`
 
 export const GitHubImage = styled.div`
     grid-column: 1 / 2;
