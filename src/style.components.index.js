@@ -13,12 +13,13 @@ import { DescriptionWrapper,
          LanguagesSpan,
          LanguagesSpanIcon,
          LanguagesWrapper, ListItem, 
+         ResumeContainer, 
          ThirdIcons} from "./style.components";
 
-/**Jose-profile web - version 4.08 - style components > index - 
+/**Jose-profile web - version 4.11 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'GitHubImage'.
+ *      --> Importing and exporting 'ResumeContainer'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -38,4 +39,5 @@ export { IntroContainer,
          ThirdIcons,
          FooterDescription,
          GitHubImage,
+         ResumeContainer,
          LanguageListItem, ListItem, LanguagesSpan }
