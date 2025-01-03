@@ -1,6 +1,7 @@
 import { DescriptionWrapper,
          FooterDescription,
          FooterStyled,
+         GitHubImage,
          HeaderContainer,
          HeaderLogo,
          HeaderTitle,
@@ -14,10 +15,10 @@ import { DescriptionWrapper,
          LanguagesWrapper, ListItem, 
          ThirdIcons} from "./style.components";
 
-/**Jose-profile web - version 4.07 - style components > index - 
+/**Jose-profile web - version 4.08 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'FooterDescription'.
+ *      --> Importing and exporting 'GitHubImage'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -36,4 +37,5 @@ export { IntroContainer,
          FooterStyled,
          ThirdIcons,
          FooterDescription,
+         GitHubImage,
          LanguageListItem, ListItem, LanguagesSpan }
