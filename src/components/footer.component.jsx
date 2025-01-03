@@ -2,19 +2,15 @@ import React from "react";
 import { useJoseProfileContext } from "../context";
 import QRDev from "./erick.vcard.component";
 import styled from "styled-components";
-import { FooterDescription, FooterStyled, ThirdIcons } from "../style.components";
+import { FooterDescription, FooterStyled, GitHubImage, ThirdIcons } from "../style.components";
 
-/**Jose-profile web - version 4.07 - FooterComponent - Features:
+/**Jose-profile web - version 4.08 - FooterComponent - Features:
  * 
- *      --> Migrating 'FooterDescription' styles
+ *      --> Migrating 'GitHubImage' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-const GitHubImage = styled.div`
-    grid-column: 1 / 2;
-`
 
 const FooterComponent = () => {
 
