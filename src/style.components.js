@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.06 - style.components - Features:
+/**Jose-profile web - version 4.08 - style.components - Features:
  * 
- *      --> writting 'ThirdIcons' styles
+ *      --> writting 'GitHubImageGitHubImage' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const GitHubImage = styled.div`
+    grid-column: 1 / 2;
+`
 
 export const FooterDescription = styled.div`
     display: grid;
