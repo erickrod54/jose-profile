@@ -1,21 +1,16 @@
 import React from "react";
 import { IntroComponent, WorkComponent, SkillsComponent, LanguagesComponent } from './index.components'
 import styled from "styled-components";
+import { ResumeContainer } from "../style.components";
 
-/**Jose-profile web - version 4.10 - ResumeComponent - Features:
+/**Jose-profile web - version 4.11 - ResumeComponent - Features:
  * 
- *      --> writting 'ResumeContainers'
+ *      --> Migrating 'ResumeContainers'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-const ResumeContainer = styled.section`
-    margin: 1rem;
-    padding: 1rem;
-    display: grid;
-    grid-column: container-start / container-end;
-`
 
 const ResumeComponent = () => {
 
