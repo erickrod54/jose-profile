@@ -2,9 +2,9 @@ import React from "react";
 import { useJoseProfileContext } from "../context";
 import styled from "styled-components";
 
-/**Jose-profile web - version 4.13 - Skills Component - Features:
+/**Jose-profile web - version 4.15 - Skills Component - Features:
  * 
- *      --> writting 'SkillsTitle' styles
+ *      --> writting 'SkillsList' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -29,6 +29,13 @@ const SkillsTitle = styled.h2`
     text-underline-offset: 4px; /* adjust the distance of the underline from the text */
 `
 
+const SkillsList = styled.ul`
+    margin: 1rem;
+    padding: 1rem;
+    font-size: calc(.7rem + 0.637vw);
+    line-height: 2rem;
+`
+
 const SkillsComponent = () => {
 
     const { skills } = useJoseProfileContext();
@@ -43,9 +50,9 @@ const SkillsComponent = () => {
                 const { id, skillname  } = skill;
                 return(
                     <div key={id}>
-                        <ul className="skills--list">
+                        <SkillsList>
                             <li className="skills--list--item">{skillname}</li>
-                        </ul>
+                        </SkillsList>
                         <hr />
                     </div>
                 )
