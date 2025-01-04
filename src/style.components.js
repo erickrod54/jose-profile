@@ -101,7 +101,7 @@ export const LanguagesWrapper = styled.section`
     display: grid;
     margin-top: 1rem;
     padding: 1rem;
-    grid-column: col-start 4 / col-end 6;
+    grid-column: col-start 2 / col-end 3;
     background: white;
     width: 40rem;
 `
