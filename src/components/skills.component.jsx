@@ -1,17 +1,21 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
+import styled from "styled-components";
 
-/**Jose-profile web - version 2.02 - Skills Component - Features:
+/**Jose-profile web - version 4.12 - Skills Component - Features:
  * 
- *      --> Clearing Code from old Markup.
- * 
- *      --> Applying style class naming.
- * 
- *      --> Refactoring the app.
+ *      --> writting 'SkillsContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
+
+const SkillsContainer = styled.section`
+    display: grid;
+    margin-top: 1rem;
+    background-color: white;
+    grid-column: col-start 4 / col-end 6;        
+`
 
 const SkillsComponent = () => {
 
@@ -21,7 +25,7 @@ const SkillsComponent = () => {
     const skillstitle = skills[0].title
 
     return(
-        <section id="skills">
+        <SkillsContainer>
             <h2 className="skills--title">{skillstitle}</h2>
             {skills.map((skill) => {
                 const { id, skillname  } = skill;
@@ -34,7 +38,7 @@ const SkillsComponent = () => {
                     </div>
                 )
             })}
-        </section>
+        </SkillsContainer>
     )
 }
 
