@@ -2,9 +2,9 @@ import React from "react";
 import { useJoseProfileContext } from "../context";
 import styled from "styled-components";
 
-/**Jose-profile web - version 4.15 - Skills Component - Features:
+/**Jose-profile web - version 4.16 - Skills Component - Features:
  * 
- *      --> writting 'SkillsList' styles
+ *      --> writting 'SkillsListContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -36,6 +36,10 @@ const SkillsList = styled.ul`
     line-height: 2rem;
 `
 
+const SkillsListContainer = styled.div`
+
+`
+
 const SkillsComponent = () => {
 
     const { skills } = useJoseProfileContext();
@@ -49,12 +53,12 @@ const SkillsComponent = () => {
             {skills.map((skill) => {
                 const { id, skillname  } = skill;
                 return(
-                    <div key={id}>
+                    <SkillsListContainer key={id}>
                         <SkillsList>
                             <li className="skills--list--item">{skillname}</li>
                         </SkillsList>
                         <hr />
-                    </div>
+                    </SkillsListContainer>
                 )
             })}
         </SkillsContainer>
