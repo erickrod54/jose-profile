@@ -1,21 +1,16 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
 import styled from "styled-components";
+import { SkillsContainer } from "../style.components";
 
-/**Jose-profile web - version 4.17 - Skills Component - Features:
+/**Jose-profile web - version 4.18 - Skills Component - Features:
  * 
- *      --> writting 'SkillsItem' styles
+ *      --> writting 'SkillsContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-const SkillsContainer = styled.section`
-    display: grid;
-    margin-top: 1rem;
-    background-color: white;
-    grid-column: col-start 4 / col-end 6;        
-`
 
 const SkillsTitle = styled.h2`
     margin: 1rem;
