@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.11 - style.components - Features:
+/**Jose-profile web - version 4.18 - style.components - Features:
  * 
- *      --> writting 'ResumeContainer' styles
+ *      --> writting 'SkillsContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const SkillsContainer = styled.section`
+    display: grid;
+    margin-top: 1rem;
+    background-color: white;
+    grid-column: col-start 4 / col-end 6;        
+`
 
 export const ResumeContainer = styled.section`
     margin: 1rem;
