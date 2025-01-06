@@ -15,13 +15,14 @@ import { DescriptionWrapper,
          LanguagesWrapper, ListItem, 
          ResumeContainer, 
          SkillsContainer, 
+         SkillsList, 
          SkillsTitle, 
          ThirdIcons} from "./style.components";
 
-/**Jose-profile web - version 4.19 - style components > index - 
+/**Jose-profile web - version 4.20 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'SkillsTitle'.
+ *      --> Importing and exporting 'SkillsList'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -44,4 +45,5 @@ export { IntroContainer,
          ResumeContainer,
          SkillsContainer,
          SkillsTitle,
+         SkillsList,
          LanguageListItem, ListItem, LanguagesSpan }
