@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.20 - style.components - Features:
+/**Jose-profile web - version 5.00 - style.components - Features:
  * 
- *      --> writting 'SkillsList' styles
+ *      --> writting 'SkillsListContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const SkillsListContainer = styled.div`
+
+`
 
 export const SkillsList = styled.ul`
     margin: 1rem;
