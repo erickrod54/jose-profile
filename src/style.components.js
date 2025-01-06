@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 4.19 - style.components - Features:
+/**Jose-profile web - version 4.20 - style.components - Features:
  * 
- *      --> writting 'SkillsTitle' styles
+ *      --> writting 'SkillsList' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const SkillsList = styled.ul`
+    margin: 1rem;
+    padding: 1rem;
+    font-size: calc(.7rem + 0.637vw);
+    line-height: 2rem;
+`
 
 export const SkillsTitle = styled.h2`
     margin: 1rem;
