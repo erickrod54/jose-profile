@@ -1,12 +1,17 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.00 - style.components - Features:
+/**Jose-profile web - version 5.01 - style.components - Features:
  * 
- *      --> writting 'SkillsListContainer' styles
+ *      --> writting 'SkillsItem' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const SkillsItem = styled.li`
+    font-size: calc(.7rem + 0.637vw);
+    line-height:  2rem;
+`
 
 export const SkillsListContainer = styled.div`
 
