@@ -1,20 +1,16 @@
 import React from "react";
 import { useJoseProfileContext } from "../context";
 import styled from "styled-components";
-import { SkillsContainer, SkillsList, SkillsTitle } from "../style.components";
+import { SkillsContainer, SkillsList, SkillsListContainer, SkillsTitle } from "../style.components";
 
-/**Jose-profile web - version 4.20 - Skills Component - Features:
+/**Jose-profile web - version 5.00 - Skills Component - Features:
  * 
- *      --> writting 'SkillsList' styles
+ *      --> writting 'SkillsListContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-
-const SkillsListContainer = styled.div`
-
-`
 
 const SkillsItem = styled.li`
     font-size: calc(.7rem + 0.637vw);
