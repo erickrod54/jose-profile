@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
 
-/**Jose-profile web - version 4.12 - WorkComponent - Features:
+/**Jose-profile web - version 5.02 - WorkComponent - Features:
  * 
- *      --> writting 'WorkExperienceWrapper'
+ *      --> writting 'WorkExperienceContainer'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -31,6 +31,10 @@ const WorkExperienceWrapper = styled.section`
     }
 `
 
+const WorkExperienceContainer = styled.article`
+
+`
+
 const WorkComponent = () => {
     
     const { workExperience } = useJoseProfileContext();
@@ -42,14 +46,15 @@ const WorkComponent = () => {
                 const { id, roltitle, company, experience1, experience2, experience3, year } = rol;
                 
                 return(
-                    <article key={id}>
+                    <WorkExperienceContainer key={id}>
                         <section key={id}>
                         <div>
-                        <h4 className="work-experience--roltitle"><span>rol - </span>{roltitle}</h4>
+                            <h4 className="work-experience--roltitle"><span>rol - </span>{roltitle}</h4>
                         </div>
                         <div>
-                        <p className="work-experience--para"><span>company - </span>{company === '' ? undefined : company}</p>
+                            <p className="work-experience--para"><span>company - </span>{company === '' ? undefined : company}</p>
                         </div>
+
                         <p className="work-experience--para" >{experience1}</p>
                         <p className="work-experience--para" >{experience2}</p>
                         { experience3 ? <p className="work-experience--para" >{experience3}</p> : null}
@@ -57,7 +62,7 @@ const WorkComponent = () => {
                         
                         <hr/>
                         </section>
-                    </article>
+                    </WorkExperienceContainer>
                 )
             })}
         </WorkExperienceWrapper>
