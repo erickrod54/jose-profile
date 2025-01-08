@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
 
-/**Jose-profile web - version 5.03 - WorkComponent - Features:
+/**Jose-profile web - version 5.04 - WorkComponent - Features:
  * 
- *      --> writting 'WorkExperienceDescription'
+ *      --> writting 'RolTitle'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -39,6 +39,18 @@ const WorkExperienceDescription = styled.section`
 
 `
 
+const RolTitle = styled.h4`
+    text-transform: capitalize;
+    font-weight: 700;  
+    font-size: calc( 0.50rem + 1vw);
+    box-shadow: 0px 2px 0px 0 5px 15px rgba(0, 0, 0, 0.2); /* add box shadow */
+    text-decoration: underline 4px solid #222; /* add underline */
+    text-underline-offset: 4px; 
+    margin: 1rem;
+    padding: 1rem;/* adjust the distance of the underline from the text */
+    color: hsla(22, 98%, 60%, 1);
+`
+
 const WorkComponent = () => {
     
     const { workExperience } = useJoseProfileContext();
@@ -53,7 +65,7 @@ const WorkComponent = () => {
                     <WorkExperienceContainer key={id}>
                         <WorkExperienceDescription key={id}>
                         <div>
-                            <h4 className="work-experience--roltitle"><span>rol - </span>{roltitle}</h4>
+                            <RolTitle><span>rol - </span>{roltitle}</RolTitle>
                         </div>
                         <div>
                             <p className="work-experience--para"><span>company - </span>{company === '' ? undefined : company}</p>
