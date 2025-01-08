@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
 
-/**Jose-profile web - version 5.04 - WorkComponent - Features:
+/**Jose-profile web - version 5.05 - WorkComponent - Features:
  * 
- *      --> writting 'RolTitle'
+ *      --> writting 'WorkExperienceContent'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -16,15 +16,6 @@ const WorkExperienceWrapper = styled.section`
     background: white;
     grid-column: col-start 8 / col-end 6;
     grid-template-rows: repeat(2);
-
-    section#work-experience > article > section > div > p > span{
-        text-transform: capitalize;
-        font-weight: 700;  
-    }
-    
-    section#work-experience:hover{
-        margin-top: 6rem;
-    }
     
     .work-experience--para{
         margin: 1.7rem;
@@ -32,7 +23,7 @@ const WorkExperienceWrapper = styled.section`
 `
 
 const WorkExperienceContainer = styled.article`
-
+    
 `
 
 const WorkExperienceDescription = styled.section`
@@ -51,6 +42,12 @@ const RolTitle = styled.h4`
     color: hsla(22, 98%, 60%, 1);
 `
 
+const WorkExperienceContent = styled.section`
+    font-size: calc(.7rem + 0.637vw);
+    line-height: 2.5;
+    margin: 1.7rem;
+`
+
 const WorkComponent = () => {
     
     const { workExperience } = useJoseProfileContext();
@@ -67,14 +64,13 @@ const WorkComponent = () => {
                         <div>
                             <RolTitle><span>rol - </span>{roltitle}</RolTitle>
                         </div>
-                        <div>
-                            <p className="work-experience--para"><span>company - </span>{company === '' ? undefined : company}</p>
-                        </div>
-
-                        <p className="work-experience--para" >{experience1}</p>
-                        <p className="work-experience--para" >{experience2}</p>
-                        { experience3 ? <p className="work-experience--para" >{experience3}</p> : null}
-                        <p className="work-experience--para">Period: {year}</p>
+                        <WorkExperienceContent>
+                            <p ><span>company - </span>{company === '' ? undefined : company}</p>
+                            <p  >{experience1}</p>
+                            <p  >{experience2}</p>
+                            { experience3 ? <p  >{experience3}</p> : null}
+                        </WorkExperienceContent>
+                            <p >Period: {year}</p>
                         
                         <hr/>
                         </WorkExperienceDescription>
