@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
 
-/**Jose-profile web - version 5.02 - WorkComponent - Features:
+/**Jose-profile web - version 5.03 - WorkComponent - Features:
  * 
- *      --> writting 'WorkExperienceContainer'
+ *      --> writting 'WorkExperienceDescription'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -35,6 +35,10 @@ const WorkExperienceContainer = styled.article`
 
 `
 
+const WorkExperienceDescription = styled.section`
+
+`
+
 const WorkComponent = () => {
     
     const { workExperience } = useJoseProfileContext();
@@ -47,7 +51,7 @@ const WorkComponent = () => {
                 
                 return(
                     <WorkExperienceContainer key={id}>
-                        <section key={id}>
+                        <WorkExperienceDescription key={id}>
                         <div>
                             <h4 className="work-experience--roltitle"><span>rol - </span>{roltitle}</h4>
                         </div>
@@ -61,7 +65,7 @@ const WorkComponent = () => {
                         <p className="work-experience--para">Period: {year}</p>
                         
                         <hr/>
-                        </section>
+                        </WorkExperienceDescription>
                     </WorkExperienceContainer>
                 )
             })}
