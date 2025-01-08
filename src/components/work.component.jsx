@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
 
-/**Jose-profile web - version 5.07 - WorkComponent - Features:
+/**Jose-profile web - version 5.08 - WorkComponent - Features:
  * 
- *      --> writting 'TimePeriod'
+ *      --> writting 'ExperienceItem'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -60,6 +60,10 @@ const TimePeriod = styled(RolTitle)`
     color: hsla(188, 98%, 30%, 1);
 `
 
+const ExperienceItem = styled.p`
+
+`
+
 const WorkComponent = () => {
     
     const { workExperience } = useJoseProfileContext();
@@ -78,9 +82,9 @@ const WorkComponent = () => {
                         </div>
                         <WorkExperienceContent>
                             <CompanyTitle ><span>company - </span>{company === '' ? undefined : company}</CompanyTitle>
-                            <p  >{experience1}</p>
-                            <p  >{experience2}</p>
-                            { experience3 ? <p  >{experience3}</p> : null}
+                            <ExperienceItem  >{experience1}</ExperienceItem>
+                            <ExperienceItem  >{experience2}</ExperienceItem>
+                            { experience3 ? <ExperienceItem  >{experience3}</ExperienceItem> : null}
                             <TimePeriod >Period: {year}</TimePeriod>
                         </WorkExperienceContent>
                         
