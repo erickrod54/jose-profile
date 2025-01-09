@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
 
 
-/**Jose-profile web - version 5.09 - WorkComponent - Features:
+/**Jose-profile web - version 5.10 - WorkComponent - Features:
  * 
- *      --> writting 'RolTitleContainer'
+ *      --> Refactoring  'WorkExperienceWrapper'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -16,10 +16,6 @@ const WorkExperienceWrapper = styled.section`
     background: white;
     grid-column: col-start 8 / col-end 6;
     grid-template-rows: repeat(2);
-    
-    .work-experience--para{
-        margin: 1.7rem;
-    }
 `
 
 const WorkExperienceContainer = styled.article`
