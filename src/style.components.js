@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.11 - style.components - Features:
+/**Jose-profile web - version 5.12 - style.components - Features:
  * 
- *      --> writting 'WorkExperienceWrapper' styles
+ *      --> writting 'WorkExperienceContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const WorkExperienceContainer = styled.article`
+    
+`
 
 export const WorkExperienceWrapper = styled.section`
     display: grid;
