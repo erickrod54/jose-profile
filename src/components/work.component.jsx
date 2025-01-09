@@ -1,22 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
+import { WorkExperienceWrapper } from "../style.components";
 
 
-/**Jose-profile web - version 5.10 - WorkComponent - Features:
+/**Jose-profile web - version 5.11 - WorkComponent - Features:
  * 
- *      --> Refactoring  'WorkExperienceWrapper'
+ *      --> Migrating  'WorkExperienceWrapper'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-const WorkExperienceWrapper = styled.section`
-    display: grid;
-    background: white;
-    grid-column: col-start 8 / col-end 6;
-    grid-template-rows: repeat(2);
-`
 
 const WorkExperienceContainer = styled.article`
     
