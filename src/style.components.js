@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.01 - style.components - Features:
+/**Jose-profile web - version 5.11 - style.components - Features:
  * 
- *      --> writting 'SkillsItem' styles
+ *      --> writting 'WorkExperienceWrapper' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const WorkExperienceWrapper = styled.section`
+    display: grid;
+    background: white;
+    grid-column: col-start 8 / col-end 6;
+    grid-template-rows: repeat(2);
+`
 
 export const SkillsItem = styled.li`
     font-size: calc(.7rem + 0.637vw);
