@@ -21,12 +21,13 @@ import { DescriptionWrapper,
          SkillsTitle, 
          ThirdIcons,
          WorkExperienceContainer,
+         WorkExperienceDescription,
          WorkExperienceWrapper} from "./style.components";
-         
-/**Jose-profile web - version 5.12 - style components > index - 
+
+/**Jose-profile web - version 5.13 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'WorkExperienceContainer'.
+ *      --> Importing and exporting 'WorkExperienceDescription'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -54,4 +55,5 @@ export { IntroContainer,
          SkillsItem,
          WorkExperienceWrapper,
          WorkExperienceContainer,
+         WorkExperienceDescription,
          LanguageListItem, ListItem, LanguagesSpan }
