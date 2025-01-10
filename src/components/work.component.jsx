@@ -1,20 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { WorkExperienceContainer, WorkExperienceWrapper } from "../style.components";
+import { WorkExperienceContainer, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
 
 
-/**Jose-profile web - version 5.12 - WorkComponent - Features:
+/**Jose-profile web - version 5.13 - WorkComponent - Features:
  * 
- *      --> Migrating  'WorkExperienceContainer'
+ *      --> Migrating  'WorkExperienceDescription'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
-
-const WorkExperienceDescription = styled.section`
-
-`
 
 const RolTitleContainer = styled.div`
 
