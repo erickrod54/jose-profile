@@ -1,12 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.13 - style.components - Features:
+/**Jose-profile web - version 5.14 - style.components - Features:
  * 
- *      --> writting 'WorkExperienceDescription' styles
+ *      --> writting 'RolTitleContainer' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const RolTitleContainer = styled.div`
+
+`
 
 export const WorkExperienceDescription = styled.section`
 
