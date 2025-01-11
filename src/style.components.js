@@ -1,12 +1,24 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.14 - style.components - Features:
+/**Jose-profile web - version 5.15 - style.components - Features:
  * 
- *      --> writting 'RolTitleContainer' styles
+ *      --> writting 'RolTitle' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const RolTitle = styled.h4`
+    text-transform: capitalize;
+    font-weight: 700;  
+    font-size: calc( 0.50rem + 1vw);
+    box-shadow: 0px 2px 0px 0 5px 15px rgba(0, 0, 0, 0.2); /* add box shadow */
+    text-decoration: underline 4px solid #222; /* add underline */
+    text-underline-offset: 4px; 
+    margin: 1rem;
+    padding: 1rem;/* adjust the distance of the underline from the text */
+    color: hsla(22, 98%, 60%, 1);
+`
 
 export const RolTitleContainer = styled.div`
 
