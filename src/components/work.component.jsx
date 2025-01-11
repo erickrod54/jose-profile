@@ -1,20 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { WorkExperienceContainer, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
+import { RolTitleContainer, WorkExperienceContainer, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
 
 
-/**Jose-profile web - version 5.13 - WorkComponent - Features:
+/**Jose-profile web - version 5.14 - WorkComponent - Features:
  * 
- *      --> Migrating  'WorkExperienceDescription'
+ *      --> Migrating  'RolTitleContainer'
  * 
  * Notes: All these are clean files in data, directory and 
  * files
 */
 
-const RolTitleContainer = styled.div`
-
-`
 
 const RolTitle = styled.h4`
     text-transform: capitalize;
