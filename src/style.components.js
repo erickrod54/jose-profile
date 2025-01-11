@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.15 - style.components - Features:
+/**Jose-profile web - version 5.16 - style.components - Features:
  * 
- *      --> writting 'RolTitle' styles
+ *      --> writting 'CompanyTitle' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -18,6 +18,11 @@ export const RolTitle = styled.h4`
     margin: 1rem;
     padding: 1rem;/* adjust the distance of the underline from the text */
     color: hsla(22, 98%, 60%, 1);
+`
+
+export const CompanyTitle = styled(RolTitle)`
+    font-size: calc( 0.50rem + 0.6vw);
+    color: hsla(220, 98%, 30%, 1);
 `
 
 export const RolTitleContainer = styled.div`
