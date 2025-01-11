@@ -4,26 +4,19 @@ import { useJoseProfileContext } from "../context";
 import { RolTitleContainer, WorkExperienceContainer, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
 
 
-/**Jose-profile web - version 5.14 - WorkComponent - Features:
+/**Jose-profile web - version 5.15 - WorkComponent - Features:
  * 
- *      --> Migrating  'RolTitleContainer'
+ *      --> Migrating  'RolTitle'
  * 
- * Notes: All these are clean files in data, directory and 
- * files
+ * Notes: error:
+ * 
+ *  Line 22:29:  'RolTitle' is not defined  no-undef
+ *  Line 27:27:  'RolTitle' is not defined  no-undef
+ *  Line 52:30:  'RolTitle' is not defined 
+ * 
+ * while dependant components are migrated
 */
 
-
-const RolTitle = styled.h4`
-    text-transform: capitalize;
-    font-weight: 700;  
-    font-size: calc( 0.50rem + 1vw);
-    box-shadow: 0px 2px 0px 0 5px 15px rgba(0, 0, 0, 0.2); /* add box shadow */
-    text-decoration: underline 4px solid #222; /* add underline */
-    text-underline-offset: 4px; 
-    margin: 1rem;
-    padding: 1rem;/* adjust the distance of the underline from the text */
-    color: hsla(22, 98%, 60%, 1);
-`
 
 const WorkExperienceContent = styled.section`
     font-size: calc(.7rem + 0.637vw);
