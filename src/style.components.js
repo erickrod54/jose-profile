@@ -1,18 +1,19 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.17 - style.components - Features:
+/**Jose-profile web - version 5.18 - style.components - Features:
  * 
- *      --> writting 'WorkExperienceContent' styles
+ *      --> writting 'TimePeriod' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
 
+
 export const WorkExperienceContent = styled.section`
     font-size: calc(.7rem + 0.637vw);
     line-height: 2.5;
     margin: 1.7rem;
-`
+    `
 
 export const RolTitle = styled.h4`
     text-transform: capitalize;
@@ -24,12 +25,18 @@ export const RolTitle = styled.h4`
     margin: 1rem;
     padding: 1rem;/* adjust the distance of the underline from the text */
     color: hsla(22, 98%, 60%, 1);
+    `
+export const TimePeriod = styled(RolTitle)`
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: hsla(188, 98%, 30%, 1);
 `
 
 export const CompanyTitle = styled(RolTitle)`
     font-size: calc( 0.50rem + 0.6vw);
     color: hsla(220, 98%, 30%, 1);
-`
+    `
 
 export const RolTitleContainer = styled.div`
 
