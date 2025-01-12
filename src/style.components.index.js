@@ -1,4 +1,4 @@
-import { DescriptionWrapper,
+import { CompanyTitle, DescriptionWrapper,
          FooterDescription,
          FooterStyled,
          GitHubImage,
@@ -26,10 +26,10 @@ import { DescriptionWrapper,
          WorkExperienceDescription,
          WorkExperienceWrapper} from "./style.components";
 
-/**Jose-profile web - version 5.15 - style components > index - 
+/**Jose-profile web - version 5.16 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'RolTitle'.
+ *      --> Importing and exporting 'CompanyTitle'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -60,4 +60,5 @@ export { IntroContainer,
          WorkExperienceDescription,
          RolTitleContainer,
          RolTitle,
+         CompanyTitle,
          LanguageListItem, ListItem, LanguagesSpan }
