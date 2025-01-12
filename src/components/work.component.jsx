@@ -1,27 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { CompanyTitle, RolTitleContainer, WorkExperienceContainer, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
+import { CompanyTitle, RolTitle, RolTitleContainer, WorkExperienceContainer, WorkExperienceContent, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
 
-
-/**Jose-profile web - version 5.16 - WorkComponent - Features:
+/**Jose-profile web - version 5.17 - WorkComponent - Features:
  * 
- *      --> Migrating  'CompanyTitle'
+ *      --> Migrating  'WorkExperienceContent'
  * 
- * Notes: error:
- * 
- *  Line 22:29:  'RolTitle' is not defined  no-undef
- *  Line 52:30:  'RolTitle' is not defined 
- * 
- * while dependant components are migrated
+ * Notes: at this point RolTitle and 
+ * dependant components are migrated
 */
 
-
-const WorkExperienceContent = styled.section`
-    font-size: calc(.7rem + 0.637vw);
-    line-height: 2.5;
-    margin: 1.7rem;
-`
 
 const TimePeriod = styled(RolTitle)`
     margin: 0;
