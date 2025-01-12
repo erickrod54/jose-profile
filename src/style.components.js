@@ -1,12 +1,18 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.16 - style.components - Features:
+/**Jose-profile web - version 5.17 - style.components - Features:
  * 
- *      --> writting 'CompanyTitle' styles
+ *      --> writting 'WorkExperienceContent' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
+
+export const WorkExperienceContent = styled.section`
+    font-size: calc(.7rem + 0.637vw);
+    line-height: 2.5;
+    margin: 1.7rem;
+`
 
 export const RolTitle = styled.h4`
     text-transform: capitalize;
