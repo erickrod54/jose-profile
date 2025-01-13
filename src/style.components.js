@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.19 - style.components - Features:
+/**Jose-profile web - version 5.20 - style.components - Features:
  * 
- *      --> writting 'ExperienceItem' styles
+ *      --> Refactoring 'DescriptionWrapper' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -194,7 +194,7 @@ export const LanguagesWrapper = styled.section`
 `
 
 export const DescriptionWrapper = styled.p`
-    line-height: 1.5rem;
+    line-height:2.2rem;
     margin: 1rem;
     padding: 1rem;
     font-size: calc(.7rem + 0.637vw);
