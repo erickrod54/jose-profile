@@ -22,15 +22,16 @@ import { CompanyTitle, DescriptionWrapper,
          SkillsListContainer, 
          SkillsTitle, 
          ThirdIcons,
+         TimePeriod,
          WorkExperienceContainer,
          WorkExperienceContent,
          WorkExperienceDescription,
          WorkExperienceWrapper} from "./style.components";
          
-/**Jose-profile web - version 5.17 - style components > index - 
+/**Jose-profile web - version 5.18 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'WorkExperienceContent'.
+ *      --> Importing and exporting 'TimePeriod'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -63,4 +64,5 @@ export { IntroContainer,
          RolTitle,
          CompanyTitle,
          WorkExperienceContent,
+         TimePeriod,
          LanguageListItem, ListItem, LanguagesSpan }
