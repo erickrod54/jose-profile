@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { useJoseProfileContext } from "../context";
-import { CompanyTitle, RolTitle, RolTitleContainer, TimePeriod, WorkExperienceContainer, WorkExperienceContent, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
+import { CompanyTitle,
+         ExperienceItem,
+         RolTitle,
+         RolTitleContainer,
+         TimePeriod,
+         WorkExperienceContainer, WorkExperienceContent, WorkExperienceDescription, WorkExperienceWrapper } from "../style.components";
 
-/**Jose-profile web - version 5.18 - WorkComponent - Features:
+/**Jose-profile web - version 5.19 - WorkComponent - Features:
  * 
- *      --> Migrating  'TimePeriod'
+ *      --> Migrating  'ExperienceItem'
  * 
  * Notes: at this point RolTitle and 
  * dependant components are migrated
 */
-
-
-const ExperienceItem = styled.p`
-
-`
 
 const WorkComponent = () => {
     
