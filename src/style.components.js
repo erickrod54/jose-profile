@@ -1,13 +1,16 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.18 - style.components - Features:
+/**Jose-profile web - version 5.19 - style.components - Features:
  * 
- *      --> writting 'TimePeriod' styles
+ *      --> writting 'ExperienceItem' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
  */
 
+export const ExperienceItem = styled.p`
+
+`
 
 export const WorkExperienceContent = styled.section`
     font-size: calc(.7rem + 0.637vw);
