@@ -1,4 +1,5 @@
 import { CompanyTitle, DescriptionWrapper,
+         ExperienceItem,
          FooterDescription,
          FooterStyled,
          GitHubImage,
@@ -28,10 +29,10 @@ import { CompanyTitle, DescriptionWrapper,
          WorkExperienceDescription,
          WorkExperienceWrapper} from "./style.components";
          
-/**Jose-profile web - version 5.18 - style components > index - 
+/**Jose-profile web - version 5.19 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'TimePeriod'.
+ *      --> Importing and exporting 'ExperienceItem'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -65,4 +66,5 @@ export { IntroContainer,
          CompanyTitle,
          WorkExperienceContent,
          TimePeriod,
+         ExperienceItem,
          LanguageListItem, ListItem, LanguagesSpan }
