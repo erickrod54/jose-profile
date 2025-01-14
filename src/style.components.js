@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 6.00 - style.components - Features:
+/**Jose-profile web - version 6.01 - style.components - Features:
  * 
- *      --> Refactoring 'IntroTitle' styles
+ *      --> Refactoring styles for responsiveness by media query
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -58,6 +58,15 @@ export const WorkExperienceWrapper = styled.section`
     background: white;
     grid-column: col-start 8 / col-end 6;
     grid-template-rows: repeat(2);
+
+     /* Responsive - Single Column Before 1024px */
+     @media (max-width: 1024px) {
+        grid-column: container-start / container-end;
+        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const SkillsItem = styled.li`
@@ -92,7 +101,15 @@ export const SkillsContainer = styled.section`
     display: grid;
     margin-top: 1rem;
     background-color: white;
-    grid-column: col-start 4 / col-end 6;        
+    grid-column: col-start 4 / col-end 6;  
+    
+        /* Responsive - Single Column */
+        @media (max-width: 1024px) {
+        grid-column: container-start / container-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const ResumeContainer = styled.section`
@@ -100,6 +117,14 @@ export const ResumeContainer = styled.section`
     padding: 1rem;
     display: grid;
     grid-column: container-start / container-end;
+
+        /* Responsive - Ensure Full Width */
+        @media (max-width: 1024px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const GitHubImage = styled.div`
@@ -191,6 +216,15 @@ export const LanguagesWrapper = styled.section`
     grid-column: col-start 2 / col-end 3;
     background: white;
     width: 40rem;
+
+        /* Responsive - Single Column */
+        @media (max-width: 1024px) {
+        grid-column: container-start / container-end;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const DescriptionWrapper = styled.p`
@@ -215,4 +249,13 @@ export const IntroContainer = styled.section`
     grid-column: center-start / col-end 3;
     grid-template-rows: repeat(2);
     background: white;
+
+        /* Responsive - Single Column */
+        @media (max-width: 1024px) {
+        grid-column: container-start / container-end;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
