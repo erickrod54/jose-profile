@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-/**Jose-profile web - version 5.20 - style.components - Features:
+/**Jose-profile web - version 6.00 - style.components - Features:
  * 
- *      --> Refactoring 'DescriptionWrapper' styles
+ *      --> Refactoring 'IntroTitle' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -202,6 +202,7 @@ export const DescriptionWrapper = styled.p`
 
 export const IntroTitle = styled.h2`
    color: var(--clr-primary-13);
+   margin: 2rem;
    font-weight: 700;
    text-transform: capitalize;
    font-size: var(--font-size-secondary-title);
