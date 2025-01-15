@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.04 - style.components - Features:
+/**Jose-profile web - version 6.05 - style.components - Features:
  * 
- *      --> Refactoring 'DescriptionWrapper' to tailwind 
+ *      --> Refactoring 'LanguageList' to tailwind 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -229,10 +229,7 @@ export const LanguageListItem = styled.ul`
 `
 
 export const LanguageList = styled.section`
-    margin: 1rem;
-    padding: 1rem;
-    font-size:calc(.7rem + 0.637vw);
-    line-height:2rem;
+    ${tw`leading-[2.2rem] m-4 p-4 text-[calc(.7rem+0.637vw)]`}	
 `
 
 export const LanguagesWrapper = styled.section`
