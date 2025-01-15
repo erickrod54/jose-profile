@@ -7,6 +7,7 @@ import { CompanyTitle, DescriptionWrapper,
          HeaderLogo,
          HeaderTitle,
          HeaderWrapper,
+         HomePageContainer,
          IntroContainer,
          IntroTitle,
          LanguageList,
@@ -29,10 +30,10 @@ import { CompanyTitle, DescriptionWrapper,
          WorkExperienceDescription,
          WorkExperienceWrapper} from "./style.components";
          
-/**Jose-profile web - version 5.19 - style components > index - 
+/**Jose-profile web - version 6.02 - style components > index - 
  * Features:
  * 
- *      --> Importing and exporting 'ExperienceItem'.
+ *      --> Importing and exporting 'HomePageContainer'.
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -67,4 +68,5 @@ export { IntroContainer,
          WorkExperienceContent,
          TimePeriod,
          ExperienceItem,
+         HomePageContainer,
          LanguageListItem, ListItem, LanguagesSpan }
