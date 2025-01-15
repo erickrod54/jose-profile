@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.05 - style.components - Features:
+/**Jose-profile web - version 6.06 - style.components - Features:
  * 
- *      --> Refactoring 'LanguageList' to tailwind 
+ *      --> Refactoring 'LanguageListItem' to tailwind 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -221,11 +221,8 @@ export const ListItem = styled.li`
 `
 
 export const LanguageListItem = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    text-transform: capitalize;
-    font-weight: 600;
+    ${tw`grid grid-cols-3 grid-rows-1 capitalize font-semibold`}	
+
 `
 
 export const LanguageList = styled.section`
