@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.03 - style.components - Features:
+/**Jose-profile web - version 6.04 - style.components - Features:
  * 
- *      --> importing 'tw' macro 
+ *      --> Refactoring 'DescriptionWrapper' to tailwind 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -254,10 +254,7 @@ export const LanguagesWrapper = styled.section`
 `
 
 export const DescriptionWrapper = styled.p`
-    line-height:2.2rem;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: calc(.7rem + 0.637vw);
+    ${tw`leading-[2.2rem] m-4 p-4 text-[calc(.7rem+0.637vw)]`}	
 `
 
 export const IntroTitle = styled.h2`
@@ -284,4 +281,5 @@ export const IntroContainer = styled.section`
         flex-direction: column;
         align-items: center;
     }
-`
+`	
+
