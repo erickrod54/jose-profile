@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import tw from "twin.macro";
 
-/**Jose-profile web - version 6.02 - style.components - Features:
+/**Jose-profile web - version 6.03 - style.components - Features:
  * 
- *      --> wirtting 'HomePageContainer' styles
+ *      --> importing 'tw' macro 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
