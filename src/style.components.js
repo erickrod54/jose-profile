@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.09 - style.components - Features:
+/**Jose-profile web - version 6.10 - style.components - Features:
  * 
- *      --> Refactoring 'HeaderLogo' to tailwind 
+ *      --> Refactoring 'FooterStyled' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -172,9 +172,9 @@ export const FooterStyled = styled.section`
     display: grid;
     grid-template-columns: repeat(8,1fr);
 
-    background: linear-gradient(var(--clr-primary-17), var(--clr-primary-15));
-    border-top: 3px solid var(--clr-primary-11);
-    background-color: var(--clr-primary-15);
+    background: linear-gradient(hsla(220, 98%, 65%, 1), hsla(220, 98%, 45%, 1));
+    border-top: 3px solid hsla(22, 98%, 45%, 1);
+    background-color: hsla(220, 98%, 45%, 1);
     grid-column: container-start / container-end;
 
     bottom: 0;
