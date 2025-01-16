@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.08 - style.components - Features:
+/**Jose-profile web - version 6.09 - style.components - Features:
  * 
- *      --> Refactoring 'HeaderContainer' to tailwind 
+ *      --> Refactoring 'HeaderLogo' to tailwind 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -182,10 +182,7 @@ export const FooterStyled = styled.section`
 `
 
 export const HeaderLogo = styled.p`
-    color: hsla(22, 98%, 60%, 1);
-    font-weight: 700;
-    text-transform: capitalize;
-    font-size: calc( 0.50rem + 1vw);
+    ${tw`text-[hsla(22,98%,60%,1)] font-bold capitalize text-[calc(0.50rem+1vw)]`}	
 `
 
 export const HeaderTitle = styled.h2`
