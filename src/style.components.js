@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.11 - style.components - Features:
+/**Jose-profile web - version 6.12 - style.components - Features:
  * 
- *      --> Refactoring 'ThirdIcons' styles
+ *      --> Refactoring 'FooterDescription' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -158,9 +158,8 @@ export const GitHubImage = styled.div`
 `
 
 export const FooterDescription = styled.div`
-    display: grid;
-    grid-column: 3 / 6;
-    place-content: center;
+    ${tw`grid col-start-3 col-end-6 place-content-center`}	
+
 `
 
 export const ThirdIcons = styled.div`
