@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.10 - style.components - Features:
+/**Jose-profile web - version 6.11 - style.components - Features:
  * 
- *      --> Refactoring 'FooterStyled' styles
+ *      --> Refactoring 'ThirdIcons' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -164,8 +164,8 @@ export const FooterDescription = styled.div`
 `
 
 export const ThirdIcons = styled.div`
-    display: grid;
-    grid-column: 8 / 10;
+    ${tw`grid col-start-8 col-end-10`}	
+
 `
 
 export const FooterStyled = styled.section`
