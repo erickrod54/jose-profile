@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.06 - style.components - Features:
+/**Jose-profile web - version 6.07 - style.components - Features:
  * 
- *      --> Refactoring 'LanguageListItem' to tailwind 
+ *      --> Refactoring 'HeaderWrapper' to tailwind 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -201,11 +201,8 @@ export const HeaderContainer = styled.div`
 `
 
 export const HeaderWrapper = styled.section`
-    background: linear-gradient(hsla(220, 98%, 45%, 1), hsla(220, 98%, 65%, 1));
-    border-bottom: 3px solid var(hsla(22, 98%, 60%, 1));
-    background-color: var(hsla(220, 98%, 45%, 1));
-    height: 30vh;  
-    grid-column: container-start / container-end;
+    ${tw`bg-[linear-gradient(hsla(220,98%,45%,1),hsla(220,98%,65%,1))] border-b-[3px] border-[hsla(22,98%,60%,1)] h-[30vh] col-span-full`}	
+
 `
 
 export const LanguagesSpanIcon = styled.span`
