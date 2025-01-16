@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.07 - style.components - Features:
+/**Jose-profile web - version 6.08 - style.components - Features:
  * 
- *      --> Refactoring 'HeaderWrapper' to tailwind 
+ *      --> Refactoring 'HeaderContainer' to tailwind 
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -195,11 +195,9 @@ export const HeaderTitle = styled.h2`
 `
 
 export const HeaderContainer = styled.div`
-    display: grid;
-    padding: 1.5rem;
-    margin-left: 1rem;
-`
+    ${tw`grid p-6 ml-4`}	
 
+`
 export const HeaderWrapper = styled.section`
     ${tw`bg-[linear-gradient(hsla(220,98%,45%,1),hsla(220,98%,65%,1))] border-b-[3px] border-[hsla(22,98%,60%,1)] h-[30vh] col-span-full`}	
 
