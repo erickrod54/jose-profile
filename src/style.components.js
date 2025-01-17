@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.13 - style.components - Features:
+/**Jose-profile web - version 6.14 - style.components - Features:
  * 
- *      --> Refactoring 'SkillsTitle' styles
+ *      --> Refactoring 'SkillsList' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -105,10 +105,7 @@ export const SkillsListContainer = styled.div`
 `
 
 export const SkillsList = styled.ul`
-    margin: 1rem;
-    padding: 1rem;
-    font-size: calc(.7rem + 0.637vw);
-    line-height: 2rem;
+    ${tw`m-4 p-4 text-[calc(0.7rem+0.637vw)] leading-8`}	
 `
 
 export const SkillsTitle = styled.h2`
