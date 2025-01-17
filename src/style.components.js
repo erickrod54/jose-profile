@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.18 - style.components - Features:
+/**Jose-profile web - version 6.19 - style.components - Features:
  * 
- *      --> Refactoring 'RolTitle' styles
+ *      --> Refactoring 'WorkExperienceContent' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -39,9 +39,7 @@ export const ExperienceItem = styled.p`
 `
 
 export const WorkExperienceContent = styled.section`
-    font-size: calc(.7rem + 0.637vw);
-    line-height: 2.5;
-    margin: 1.7rem;
+    ${tw`text-[calc(.7rem+0.637vw)] leading-[2.5] m-[1.7rem]`}	
     `
 
 export const RolTitle = styled.h4`
