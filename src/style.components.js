@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import tw from "twin.macro";
 
-/**Jose-profile web - version 6.15 - style.components - Features:
+/**Jose-profile web - version 6.17 - style.components - Features:
  * 
- *      --> Refactoring 'SkillsItem' styles
+ *      --> Refactoring 'TimePeriod' styles
  * 
  * Notes: All these are clean files in data, directory and 
  * files
@@ -56,15 +56,12 @@ export const RolTitle = styled.h4`
     color: hsla(22, 98%, 60%, 1);
     `
 export const TimePeriod = styled(RolTitle)`
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: hsla(188, 98%, 30%, 1);
+    ${tw`m-0 p-0 no-underline text-cyan-800`}	
+
 `
 
 export const CompanyTitle = styled(RolTitle)`
-    font-size: calc( 0.50rem + 0.6vw);
-    color: hsla(220, 98%, 30%, 1);
+    ${tw`text-[calc(0.50rem+0.6vw)] text-blue-800`}	
     `
 
 export const RolTitleContainer = styled.div`
